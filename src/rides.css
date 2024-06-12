@@ -1,0 +1,573 @@
+.bike-body{
+    padding-top: 0;
+    padding-bottom: 15px;
+    margin: 0;
+    background-color: rgb(20,20,20);
+    font-family: system-ui, -apple-system;
+}
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 4.5rem;
+    color: black;
+}
+
+.vehical .heading span {
+    position: relative;
+    z-index: 0;
+}
+
+.vehical .heading span::before {
+    content: '';
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-color: yellow;
+    clip-path: polygon(0% 90%, 100% 80%, 100% 100%, 0% 100%);
+}
+
+.vehical .slider {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    overflow-x: hidden;
+    text-align: center;
+    font-size: 1.2rem;
+    color: black;
+}
+
+.vehical .slider .wrapper {
+    position: relative;
+}
+
+.vehical .slider .wrapper .preNext {
+    cursor: pointer;
+    font-size: 5rem;
+    text-align: center;
+    height: 60%;
+    color: black;
+    z-index: 1;
+}
+
+.vehical .slider .wrapper .preNext#preBtn {
+    position: absolute;
+    padding-top: 10%;
+    width: 30%;
+    top: 0;
+    left: 0;
+}
+
+.vehical .slider .wrapper .preNext#nextBtn {
+    position: absolute;
+    padding-top: 10%;
+    width: 30%;
+    top: 0;
+    right: 0;
+}
+
+.vehical .slider .activecricle .fa-circle {
+    color: rgb(119, 255, 0);
+    padding-bottom: 3rem;
+}
+
+.vehical .slider .activecricle .fa-solid {
+    font-size: 1.2rem;
+}
+
+.vehical .slider .wrapper .wrapper-box {
+    display: flex;
+    transition: all 0.2s ease-in-out;
+    margin-left: 26vw;
+}
+
+.vehical .slider .wrapper .wrapper-box .box {
+    width: 300px;
+    text-align: center;
+}
+
+.vehical .slider .wrapper .wrapper-box .box img {
+    cursor: pointer;
+    width: 250px;         /*  sliding cars */
+    opacity: 0.5;
+}
+
+.vehical .slider .wrapper .wrapper-box .box .content {
+    margin-top: 5rem;
+    display: none;
+}
+
+.vehical .slider .wrapper .wrapper-box .box.active {
+    width: 100%;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.vehical .slider .wrapper .wrapper-box .box.active img {
+    transform: scale(1.8);
+    opacity: 1;
+}
+
+.vehical .slider .wrapper .wrapper-box .box.active .content {
+    width: 100%;
+    display: block;
+    font-size: 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.car-body {
+    background-color: #212237;
+    color: #fff;
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.loading {
+    margin: 5px;
+    position: relative;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+}
+
+#particles-js {
+    background: black;
+    height: 100vh;
+}
+
+.loading span {
+    position: relative;
+    width: 5px;
+    height: 20px;
+}
+
+.loading span::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    animation: animate 8s linear infinite;
+    animation-delay: calc(var(--i) * 0.1s);
+}
+
+@keyframes animate {
+    0% {
+        background: #0f0;
+        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        rotate: 0deg;
+    }
+
+    20% {
+        background: #0f0;
+        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        rotate: 0deg;
+    }
+
+    40% {
+        background: #0f0;
+        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        rotate: 90deg;
+        transform-origin: bottom;
+        filter: hue-rotate(0deg);
+    }
+
+    80% {
+        background: #0f0;
+        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        rotate: 90deg;
+        transform-origin: bottom;
+        filter: hue-rotate(360deg);
+    }
+
+    90% {
+        background: #fef723;
+        box-shadow: none, rotate: 0deg;
+    }
+
+    90.1%,
+    100% {
+        box-shadow: #fe2323;
+        box-shadow: none;
+    }
+}
+
+.portfolio {
+    margin: 10px;
+    margin-bottom: 100px;
+}
+
+.portfolio h2 {
+    margin-top: 4rem;
+    font-size: 56px;
+    margin-bottom: 4rem;
+}
+
+.portfolio-container {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-container .portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem #fff;
+    overflow: hidden;
+    display: flex;
+}
+
+.portfoli-box img {
+    width: 100px;
+    transition: 0.5s ease;
+}
+
+.portfoli-box:hover img {
+    transform: scale(1.1);
+}
+
+.fa-car {
+    font-size: 20px;
+}
+
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #212237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: 0.5s ease;
+}
+
+.fa-hand-point-right {
+    font-size: 15px;
+}
+
+.portfolio-box .portfolio-layer li {
+    list-style-type: none;
+}
+
+.portfolio-box:hover .portfolio-layer {
+    transform: translateY(0);
+}
+
+.portfolio-layer h4 {
+    font-size: 2rem;
+}
+
+.portfolio-layer p {
+    color: yellow;
+    font-size: 1rem;
+    margin: 0.3rem 0 1rem;
+}
+
+.portfolio-layer a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: #facc62;
+    border-radius: 50%;
+}
+
+.portfolio-layer a i {
+    font-size: 1rem;
+    color: #323946;
+}
+
+.sss {
+    width: 90vh;
+    height: 290px;
+}
+
+@media (max-width:1000px){
+    .portfolio-container {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .sss{
+        width: 100%;
+    }
+    
+}
+
+@media (max-width:600px){
+    .portfolio-container {
+        margin: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        gap: 2.5rem;
+    }
+    .sss{
+        width: 100%;
+    }
+    
+}
+
+.heading {
+    display: flex;
+    padding-left: 45px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hhh {
+    color: rgb(135,135,140);
+    font-weight: 620;
+    font-size: 50px;
+}
+
+.con2 {
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+
+.contents {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.boxx {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin-left: 45px;
+    margin-right: 45px;
+    align-items: center;
+    justify-items: space-between;
+    border-radius: 1rem;
+    background-color: black;
+
+}
+
+.boxx::-webkit-scrollbar {
+    display: none;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.right-arrow, .left-arrow {
+    position: absolute;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    text-justify: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
+    color: rgb(85,85,85);
+    background-color: rgb(30,30,30);
+    opacity: 75%;
+    z-index: 1;
+    border: none;
+    border-radius: 50%;
+}
+
+.right-arrow {
+    right: 75px;
+}
+
+.left-arrow {
+    left: 75px;
+}
+
+.box:hover .left-arrow {
+    background-color: rgb(55,55,55);
+    color: rgb(215,215,215);
+    transition: 0.5s;
+}
+
+.box:hover .right-arrow {
+    background-color: rgb(55,55,55);
+    color: rgb(215,215,215);
+    transition: 0.5s;
+}
+
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 500px;
+    transition: 0.3s;
+}
+
+.contents:nth-last-child(2) {
+    margin-left: 103px;
+}
+
+
+.content:hover {
+    transform: scale(1.01);   
+}
+
+.image-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 35px;
+}
+
+.photo {
+    object-fit: contain;
+}
+
+
+.veh-name {
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 10px;
+    color: rgb(135,135,140);
+}
+
+.veh-name p {
+    color: rgb(255,255, 255);
+    font-size: 30px;
+    margin-top: 13px;
+}
+
+.closer {
+    position: absolute;
+    margin-top: 75%;
+    align-self: center;
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    border-radius: 2rem;
+    background-color: rgb(30,30,30);
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.closer:hover {
+    background-color: rgb(0,115,225);
+    transition: 0.5s;
+}
+
+.content:hover .closer{
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.price {
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    margin-top: -7px;
+    margin-bottom: 55px;
+}
+
+.btn {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(0,115,225);
+    margin-bottom: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: black;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+.butt {
+    padding-top: 25px;
+    margin-right: 45px;
+    font-size: 20px;
+    font-weight: 400;
+    color: rgb(0,115,225);
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.butt:hover {
+    text-decoration: underline;
+}
+
