@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Car Renting Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
     <link rel="stylesheet" href="src/main.css">
 <!---->
@@ -39,7 +40,7 @@
     </div>
 
     <div class="ride-button">
-        <h2 id="ride-bttn" onclick="myFunction()">Select Your Ride</h2>
+        <button id="ride-bttn" onclick="myFunction()">Select Your Ride</button>
     </div>
 
   </header>
@@ -83,56 +84,66 @@
 
             <div class="other-ser-grid">
                 <div class="o-col1">
-                        <a target="_blank" href="self-drive.webp">
+                       
                         <img src="res/self-drive.webp" alt="Cinque Terre">
-                        </a>
+
+                            <div class="layer">
+                                <a href=""> <h3>More Details</h3></a>
+                            </div>
+                       
                          <div class="desc">Self Drive Rentals</div>
                 </div>
                 <div class="o-col2">
-                        <a target="_blank" href="corporate.png">
+                        
                         <img src="res/corporate.png" alt="Cinque Terre">
-                        </a>
-                        <div class="desc">Corporate Rental</div>
+
+                        <div class="layer">
+                            <a href=""> <h3>More Details</h3></a>
+                        </div>
+                        
+                        <div class="desc">Corporate Rental <br>& <br>Airport Transfers</div>
                 </div>
                 <div class="o-col3">
-                        <a target="_blank" href="airport.jpg">
-                        <img src="res/airport.jpg" alt="Cinque Terre">
-                        </a>
-                        <div class="desc">Airport Transfers</div>
-                </div>
-                <div class="o-col4">
-                        <a target="_blank" href="bikes.webp">
+                    
                         <img src="res/bikes.webp" alt="Cinque Terre">
-                        </a>
+                        <div class="layer">
+                            <a href=""> <h3>More Details</h3></a>
+                        </div>
+                       
                         <div class="desc">Bike Rentals</div>
                 </div>
+                
             </div>
 
             <div class="other-ser-grid">
                 <div class="o-col1">
-                        <a target="_blank" href="wedding.jpg">
+                        
                         <img src="res/wedding.jpg" alt="Cinque Terre">
-                        </a>
+                        <div class="layer">
+                            <a href=""> <h3>More Details</h3></a>
+                        </div>
+                        
                          <div class="desc">Wedding &VIP Hires</div>
                 </div>
                 <div class="o-col2">
-                        <a target="_blank" href="e-bikes.webp">
+                        
                         <img src="res/e-bikes.webp" alt="Cinque Terre">
-                        </a>
-                        <div class="desc">E-Bikes Rental</div>
+                        <div class="layer">
+                            <a href=""> <h3>More Details</h3></a>
+                        </div>
+                        
+                        <div class="desc">Tour Vehicles</div>
                 </div>
                 <div class="o-col3">
-                        <a target="_blank" href="jeep.jpg">
+                       
                         <img src="res/jeep.jpg" alt="Cinque Terre">
-                        </a>
+                        <div class="layer">
+                            <a href=""> <h3>More Details</h3></a>
+                        </div>
+                       
                         <div class="desc">4*4 Rentals</div>
                 </div>
-                <div class="o-col4">
-                        <a target="_blank" href="bg pic 6.jpg">
-                        <img src="res/bg6.jpg" alt="Cinque Terre">
-                        </a>
-                        <div class="desc">Bike Rentals</div>
-                </div>
+               
             </div>
         </div>
         
@@ -179,38 +190,26 @@
   <div id="contact" class="contact">
          <h1>Contact Us</h1>
 
-         <div class="social-apps">
-             <div class="c-col">
-                <img src="res/facebook.png" alt="">
+  
 
-             </div>
-             <div class="c-col">
-                <img src="res/insta.png" alt="">
-                
-             </div>
-             <div class="c-col">
-                <img src="res/youtube.png" alt="">
-                
-             </div>
-           
-         </div>
-         <div class="other-contact">
-           <h3>Email Us</h3>
-
-           <p>gearupsl@gmail.com</p>
-
-
-           <h3>Call Us</h3>
-
-           <p>+94 111 445 455 <br>+94 111 400 455</p>
-       </div>
-
-       <div class="copyr">
-        <p>Copyright © Sithika.H</p>
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-body-secondary">© 2024 GearUp Pvt Lmt. All rights reserved.</span>
     </div>
-  </div>
 
+    <ul class="Social-apps">
+        <li><a href="#" class="nav-link px-2 link-secondary">
+            <img src="instagram.png" alt="">
+        </a></li>
+        <li><a href="#" class="nav-link px-2"><img src="" alt=""></a></li>
+        <li><a href="#" class="nav-link px-2">Pricing</a></li>
+    </ul>
+  </footer>
     
+  </div>
 
 
     <script src="src/main.js"></script>
