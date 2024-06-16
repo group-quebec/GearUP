@@ -1,5 +1,6 @@
-function myFunction(){
-    document.getElementById("ride-bttn")
-  }
+function navigateToPage() {
+  window.location.href = 'sites/sanjana.html'; 
+}
+
 
   
