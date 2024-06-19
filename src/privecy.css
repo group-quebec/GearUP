@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anta&display=swap');
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #090351;
+}
+
+.para{
+    font-weight: 600; 
+    padding-right: 90px;
+}
+.tbox {
+    border-radius: 20px;
+    padding: 30px;
+    margin: 10px;
+    background-color: #007bff;
+    font-family: "Caveat", cursive;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.terms-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 90px;
+    background-color: ##090351;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.content {
+    max-width: 50%;
+}
+
+.lol {
+    font-family: "Bree Serif", serif;
+    font-size: 60px;
+}
+
+.content h1 {
+    font-family: "Anta", sans-serif;
+    font-weight: bolder;
+    font-size: 70px;
+    margin: 0;
+}
+
+.highlight {
+    font-family: "Caveat", cursive;
+}
+
+.highlight {
+    color: #ff0000;
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 20px;
+    font-weight: bolder;
+    color: #555;
+    margin: 20px 0;
+    
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.accept {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.cancel {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+.image {
+    width: 500px;
+    max-width: 40%;
+    padding-left: 20px;
+}
+
+.image img {
+    margin-left: 60px;
+    width: 100%;
+    margin-top: 25%;
+}
+
+.topicnimg {
+    display: flex;
+}
+
+.words {
+    font-size: 30px;
+    color: #f5f5f5;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: inherit;
+}
+
+.fa-solid {
+    font-size: 20px;
+}
+
+.test1 {
+    display: flex;
+    padding: 60px;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.test0{
+    padding: 90px;
+}
+
+@media (max-width: 1000px) {
+    .test1 {
+        gap: 30px;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .test0{
+        padding: 61px;
+    }
+.test2{
+    text-align: center;
+}
+.terms-container{
+    padding: 61px;
+}
+.para{
+    padding-right: 0px;
+}
+
+    .button-set{
+        justify-content: center;
+        
+    }
+
+}
+
+@media (max-width: 600px) {
+    .content {
+        max-width: 90%;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .tbox {
+        font-size: 20px;
+    }
+    .test1 img{
+        margin-right: 0px;
+        margin: 36px;
+        
+    }
+    dd{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+   
+}
+@media (max-width: 500px){
+    .lol{
+        font-size: 50px;
+    }
+    .test1{
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+    }
+    .test1 img{
+        width: 250px;
+        margin-bottom: 30px;
+
+    }
+    .terms-container{
+        padding: 0px;
+        margin: auto;
+    }
+    .words{
+        padding: 50px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 400px){
+
+    .test1 img{
+        width: 200px;
+    }
+    button.accept {
+        padding: 10px 20px;
+    }
+    .highlight{
+        font-size: 30px;
+    }
+    .lol{
+        font-size: 40px;
+    }
+    .tbox{
+        padding: 20px;
+    }
+}
