@@ -392,3 +392,74 @@ header{
     opacity: 0;
     pointer-events: none;
 }
+
+
+/* ------------------------------------------------------------------------- */
+
+
+@media screen and (max-width: 430px){
+
+    header{
+        background-image: url(D:\html\car rent\GearUP\res\bg3.jpg);
+        text-align: center;
+        height: 80vh;
+        
+    
+    }
+
+    .fas{
+        display: block;
+        font-size: 25px;
+        color: #000000;
+        outline-color: aliceblue;
+    }
+
+    .navbar{
+        background: #00fce3;
+        position: fixed;
+        top: 0;
+        right: -350px;
+        width: 300px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    .navbar li{
+        display: block;
+        margin: 25px;
+    }
+
+    .navbar .fas{
+        position: absolute;
+        top: 50px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+
+    .header-btn{
+        margin-right: 10vw;
+       
+
+    }
+
+    .topic h1{
+        font-size: 33px;
+        text-align: center;
+    }
+
+    .serv-sec{
+        display: block;
+    }
+
+    .ser-col1,.ser-col2,.ser-col3{
+        padding-bottom: 5vh;
+    }
+
+    .other-ser-grid{
+        display: block;
+    }
+
+}
