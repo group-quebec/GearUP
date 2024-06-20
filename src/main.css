@@ -48,11 +48,9 @@ header{
 
 .sitelogo img{
    
-    width: 10vw;
-    height:8vh;
-    border-radius:20px;
-    background-color: #ffffff;
-    padding: 0;
+    width: auto;
+    height:7vh;
+   
    
     
 }
@@ -106,27 +104,39 @@ header{
 }
 
 .header-btn{
-    flex-basis: 20%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5vw;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    outline: none; 
+    font-family: Arial, sans-serif; 
    
   
 }
 
-.header-btn img{
-    width: 2vw;
-    height: 4vh;
-    transition:background 0.5s, transform 0.5s;
-    justify-content: end;
-    background-color: #686868;
-    border-radius: 50%;
+.h-btn1{
+    background-color: #0078d7;
+    color: white;
+    border-radius: 20px; 
+    border: 1px solid #0078d7; 
 }
 
-.header-btn img:hover{
-    transform: translateY(-6px);
+.h-btn1:hover{
+    background-color: #005a9e;
 }
+
+.h-btn2{
+    background-color: white; 
+    color: #0078d7;
+    border: 1px solid #0078d7; 
+    border-radius: 20px;
+}
+
+.h-btn2:hover{
+    background-color: #e5f1fb;
+}
+
 
 .topic{
    
@@ -134,10 +144,14 @@ header{
     padding-top: 25vh;
     align-items: center;
     justify-content: center;
+
+    position: relative;
+    text-align: center;
+    color: white;
 }
 .topic h1{
    
-    font-size: 50px;
+   
     background: -webkit-linear-gradient(rgb(0, 0, 0),rgb(19, 70, 210),rgb(0, 233, 254), rgb(255, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -145,24 +159,31 @@ header{
     text-align: center;
     font-weight: 500;
     font-style: italic;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 48px;
+   
    
 }
 
 .topic p{
    
-    font-size: 25px;
+   
     align-items: center;
     color: #000000;
     text-align: center;
-    -webkit-text-stroke: 0.7px rgba(255, 255, 255, 0.7);
+    -webkit-text-stroke: 0.7px rgba(0, 253, 253, 0.7);
     
     width: max-content;
+    font-size: 24px;
+    -webkit-background-clip: text;
+    
    
     
 }
 
 .btn{
     margin-top: 20vh;
+    border: 2px solid #000000;
 }
     
  
@@ -284,7 +305,7 @@ header{
     justify-content: space-around;
     display: flex;
     padding-bottom: 10vh;
-    background-image: linear-gradient( #4872cd,rgb(79, 79, 79),rgb(0, 0, 0));
+    background-image: linear-gradient(rgb(0,0,0), #4872cd,rgb(79, 79, 79),rgb(0, 0, 0));
     
 }
 
@@ -361,13 +382,68 @@ header{
 
 
 }
+.about{
+    display: flex;
+    flex-basis: 100%;
+    ;
+
+}
+
+.abt-col1{
+    flex-basis: 60%;
+    
+}
+
+.abt-col1 h1{
+    padding-top: 15vh;
+    color: #000000;
+    padding-left: 2vw;
+    padding-bottom: 3vh;
+    font-weight: 600;
+}
+
+.abt-col1 p{
+    padding-left: 3vh;
+    padding-right: 3vh;
+   margin-bottom: 3vh;
+}
+
+.side1{
+   
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.locate-button{
+    background-color: #257dc4;
+    height: 5vh;
+    border: 1px solid #fcfeff; 
+}
+
+
+.abt-col2{
+    flex-basis: 40%;
+    margin: 20px;
+}
+
+.abt-col2 img{
+    width: 30vw;
+}
+
+
+
 
 .contact h1{
     text-align: center;
      font-style: oblique;
-     text-align: center;
      padding-bottom: 5vh;
      font-size: 35px;
+
+}
+
+.contact p{
+    text-align: center;
+    font-style: oblique;
 
 }
 
@@ -399,7 +475,7 @@ header{
 /* ------------------------------------------------------------------------- */
 
 
-@media screen and (max-width: 430px){
+@media screen and (max-width: 400px){
 
     header{
         background-image: url(D:\html\car rent\GearUP\res\bg3.jpg);
@@ -464,4 +540,67 @@ header{
         display: block;
     }
 
+    .layer{
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+      text-align: center;
+        transition: height 0.5s;
+    }
+
+    .row{
+        display: block;
+    }
+
+    .col-lg-7{
+        display: block;
+    }
+
+    .display-4{
+        color: #e5e5e5;
+    }
+
+    .about{
+        display: block;
+    }
+
+    .abt-col1 h1{
+        font-size: 50px;
+    }
+
+    .locate-button{
+        margin-bottom: 5vh;
+    }
+
+    .abt-col2 img{
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+        width: 330px;
+    }
+
+    .reveiws{
+      
+    }
+
+    .rew-topic h2{
+        font-size: 35px;
+    }
+
+    .rew-list{
+        display: block;
+    }
+
+    .rew-list div{
+        margin-bottom: 5vh;
+        width: 80%;
+        margin-left: 10vw;
+        transition:background 0.5s, transform 0.5s;
+       
+    }
+
+    .rew-list div:hover{
+        background-color:#8fa6aa;
+        transform: translateY(-10px);
+    }
 }
