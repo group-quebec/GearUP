@@ -51,7 +51,18 @@
     top: 0;
     left: 0;
 }
-
+.more{
+    background-color: yellow;
+     color: black;
+      width: 30vw;
+        text-align: center;
+         margin: auto; 
+         border-radius: 5%;
+         display: flex;
+          align-items: center;
+           justify-content: center;
+            padding: 12px;
+}
 .vehical .slider .wrapper .preNext#nextBtn {
     position: absolute;
     padding-top: 10%;
@@ -261,18 +272,18 @@ body {
     }
 }
 
-.portfolio {
+.moye {
     margin: 10px;
     margin-bottom: 100px;
 }
 
-.portfolio h2 {
+.moye h2 {
     margin-top: 4rem;
     font-size: 56px;
     margin-bottom: 4rem;
 }
 
-.portfolio-container {
+.moye-container {
     margin: 30px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -280,7 +291,7 @@ body {
     gap: 2.5rem;
 }
 
-.portfolio-container .portfolio-box {
+.moye-container .moye-box {
     position: relative;
     border-radius: 2rem;
     box-shadow: 0 0 1rem #fff;
@@ -301,7 +312,7 @@ body {
     font-size: 20px;
 }
 
-.portfolio-box .portfolio-layer {
+.moye-box .moye-layer {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -322,25 +333,25 @@ body {
     font-size: 15px;
 }
 
-.portfolio-box .portfolio-layer li {
+.moye-box .moye-layer li {
     list-style-type: none;
 }
 
-.portfolio-box:hover .portfolio-layer {
+.moye-box:hover .moye-layer {
     transform: translateY(0);
 }
 
-.portfolio-layer h4 {
+.moye-layer h4 {
     font-size: 2rem;
 }
 
-.portfolio-layer p {
+.moye-layer p {
     color: yellow;
     font-size: 1rem;
     margin: 0.3rem 0 1rem;
 }
 
-.portfolio-layer a {
+.moye-layer a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -350,7 +361,7 @@ body {
     border-radius: 50%;
 }
 
-.portfolio-layer a i {
+.moye-layer a i {
     font-size: 1rem;
     color: #323946;
 }
@@ -361,7 +372,7 @@ body {
 }
 
 @media (max-width:1000px) {
-    .portfolio-container {
+    .moye-container {
         margin: 30px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -376,7 +387,7 @@ body {
 }
 
 @media (max-width:600px) {
-    .portfolio-container {
+    .moye-container {
         margin: 30px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -386,6 +397,9 @@ body {
 
     .sss {
         width: 100%;
+    }
+    .more{
+        width: 58vw;
     }
 
 }
