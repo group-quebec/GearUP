@@ -8,18 +8,37 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/navbar.css"/>
     <link rel="stylesheet" href="../src/forms.css" />
-  
+    <script src="../src/globalstate.js"></script>
+    <script src="../src/account.js"></script>
 </head>
   <body>
 
-    <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="row headersec">
+            
+            <div class="sitelogo">
+                <img src="../res/teslalogo.png" alt="carlogo">
+              </div>
+
+             <ul class="navbar">
+              <li><a href="#home">Home</a></li>
+              <li><a href="sites/sanjana.html">Ride</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#contact">Contact</a></li>
+             </ul>
+
+             <i class="fas fa-bars" onclick="openmenu()"></i>
+           
+            <div class="header-btn">
+                <a href="login.html"><img src="../res/login.png" alt="logging icon"></a>
+            </div>
+    
+        </div>
+
         <div class="row justify-content-md-center">
             <div class="col-lg-8 col-md-4 col-sm-4 quote">
                 <div class="row">
-                    <!--
-                    <div class="col-4 box">
-                    </div>
-                    <div class="text">This is a quote or some text that animates out.</div>-->
 
                 </div>
             </div>
@@ -37,6 +56,11 @@
                         <label>Full Name</label>
                         <input type="text" placeholder="Enter full name" required />
                     </div>
+                    
+                    <div class="input-box">
+                        <label>Username</label>
+                        <input type="text" placeholder="Enter username" id="reg-username" required />
+                    </div>
 
                     <div class="input-box">
                         <label>Email Address</label>
@@ -53,13 +77,13 @@
                     <div class="input-box">
                         <label>Password</label>
                         <div class="column">
-                            <input type="password" placeholder="Enter your password" required>
-                            <input type="password" placeholder="Confirm your password" required>
+                            <input type="password" placeholder="Enter your password" id="reg-pass" required>
+                            <input type="password" placeholder="Confirm your password" id="reg-pass-conf" required>
                         </div>
                     </div>
                     
                     <div class="row" style="margin: 30px 2px 10px;">
-                        <button type="button" class="col-sm" onclick="toggleForms()">Sign up</button>
+                        <button type="button" class="col-sm" onclick="handleAddAccount()">Sign up</button>
                         <a href="javascript:void(0)" class="col-sm text-center" onclick="toggleForms()">Sign in</a>
                     </div>
 
@@ -76,21 +100,31 @@
                     <form action="#" class="form">
 
                     <div class="input-box">
-                        <label>Email Address</label>
-                        <input type="text" placeholder="Enter email address" required />
+                        <label>Username</label>
+                        <input type="text" placeholder="Enter your username" id="login-username" required/>
                     </div>
 
                     <div class="input-box">
                         <label>Password</label>
-                        <input type="password" placeholder="Enter your password" required>
+                        <input type="password" placeholder="Enter your password" id="login-password" required>
                     </div>
                     
                     <div class="row" style="margin: 30px 2px 10px;">
-                        <button type="button" class="col-sm" onclick="toggleForms()">Sign in</button>
+                        <button type="button" class="col-sm" onclick="handleLogin()">Sign in</button>
                         <a href="javascript:void(0)" class="col-sm text-center" onclick="toggleForms()">Sign up</a>
                     </div>
 
                 </form>
+                </section>
+                
+                <section id="welcome-section" class="hidden container-body anim8">
+                    <header>Welcome hutto</header>
+                    
+                    <div class="row">
+                        <img src="../res/2.jpg" alt=""/>
+                    </div>
+
+                    <p>Redirecting to home...</p>
                 </section>
             </div>
         </div>

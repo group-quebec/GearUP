@@ -22,6 +22,107 @@ body {
     background-attachment: fixed;
 }
 
+/* header{
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 80vh;
+  color: aliceblue;
+  margin-bottom: 5vh !important;
+} */
+
+.headersec{
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  border-bottom: 0.5px solid #e5e5e5;
+  background-color: #ffffff;
+}
+
+.sitelogo{
+  flex-basis: 20%;
+  padding-left: 5vw;
+  padding: 1vh 4vw;
+}
+
+.sitelogo img{
+ 
+  width: 6vw;
+  height: 5vh;
+  border-radius:20px;
+  background-color: #000000;
+ 
+  
+}
+
+.navbar{
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  margin: 0 1vw;
+}
+
+
+.navbar li a{
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar li a:hover {
+  color: rgb(0, 123, 255);
+}
+
+.navbar li a::after{
+  content: '';
+  width: 0;
+  height: 0.5vh;
+  background: linear-gradient(#000000, rgb(79, 79, 79), rgb(255, 252, 252));
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.5s;
+}
+
+.navbar li a:hover::after{
+  width: 100%;
+} 
+
+.header-btn{
+  flex-basis: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 5vw;
+ 
+
+}
+
+.header-btn img{
+  width: 2vw;
+  height: 4vh;
+  transition:background 0.5s, transform 0.5s;
+  justify-content: end;
+  background-color: #686868;
+  border-radius: 50%;
+}
+
+.header-btn img:hover{
+  transform: translateY(-6px);
+}
+
 .remove-padding{
   padding-right: 0px;
   padding-left: 0px;
@@ -83,7 +184,7 @@ body {
 }
 
 .anim8{
-  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0.5s backwards;
+  animation: image-in 1s cubic-bezier(0.5, 0, 0.1, 1) 0.3s backwards;
 }
 
 @keyframes image-in {

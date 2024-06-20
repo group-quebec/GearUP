@@ -5,4 +5,4 @@ function toggleForms() {
     signupSection.classList.toggle('visible');
     loginSection.classList.toggle('hidden');
     loginSection.classList.toggle('visible');
-  }
+}

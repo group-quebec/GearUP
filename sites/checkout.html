@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/checkout.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    
+    <script src="../src/car_data.js"></script>
+    <script src="../src/checkout.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+    <title>CheckOut</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row m-0">
+            <div class="col-lg-7 pb-5 pe-lg-5">
+                <div class="row">
+                    <div class="col-12 p-0">
+                        <img src="../res/13675.jpg" alt="" id="car-image">
+                    </div>
+                    <div class="row m-0 bg-light">
+                        <div class="col-md-4 col-6 ps-30 pe-0 my-4">
+                            <p class="text-muted">Model</p>
+                            <p class="h5" id="model-disp"></p>
+                        </div>
+                        <div class="col-md-4 col-6  ps-30 my-4">
+                            <p class="text-muted">Transmission</p>
+                            <p class="h5 m-0" id="type-disp">Manual</p>
+                        </div>
+                        <div class="col-md-4 col-6 ps-30 my-4">
+                            <p class="text-muted">Fuel</p>
+                            <p class="h5 m-0" id="fuel-disp">Front</p>
+                        </div>
+                        <div class="col-md-12 col-6 ps-30 my-4">
+                            <p class="text-muted">Description</p>
+                            <p class="h5 m-0" id="desc-disp">Supirima car eka kolloh</p>
+                        </div>
+                    </div>
+                    <div class="row m-0 bg-light">
+                        <div class="col-md-4 col-6 ps-30 my-4">
+                            <p class="text-muted">Daily Rate</p>
+                            <p class="h5 m-0" id="rate-disp">Rs 450</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 p-0 ps-lg-4">
+                <div class="row m-0">
+                    <form action="" method="post">
+                        <div class="col-12 px-0">
+                            <div class="d-flex align-items-end mt-4 mb-2">
+                                <p class="h4 m-0"><span class="pe-1">Model</p>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="col-6 justify-content-center me-2">
+                                    <!-- <p class="fs-14 fw-bold">1</p> -->
+                                    <!-- <p class="textmuted">Rental date</p> -->
+                                    <label for="date" class="row textmuted m-1">Rental date</label>
+                                    <input type="date" class="row m-2 mt-1" id="rental-date" required>
+                                </div>
+                                <div class="col-6 justify-content-center">
+                                    <label for="date" class="row textmuted m-1">Return date</label>
+                                    <input type="date" class="row m-2 mt-1" id="return-date" required>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="col-6 justify-content-center me-2">
+                                    <label for="location" class="row textmuted m-1">Rental location</label>
+                                    <select name="location" id="rental-location" class="row m-2 mt-1 location-select" required>
+                                        <option value="vv">Colombo</option>
+                                        <option value="vv">Nuwara Eliya</option>
+                                    </select>
+                                </div>
+                                <div class="col-6 justify-content-center">
+                                    <label for="location" class="row textmuted m-1">Return location</label>
+                                    <select name="location" id="return-location" class="row m-2 mt-1 location-select" required>
+                                        <option value="vv">Colombo</option>
+                                        <option value="vv">Nuwara Eliya</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <div class="col-12 justify-content-center">
+                                    <label for="promocode" class="row textmuted m-1">Promo Code</label>
+                                    <input type="text" name="promocode" id="" class="row m-2 mt-1">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                    <div class="col-12 px-0">
+                        <div class="row bg-light m-0">
+                            <div class="d-flex align-items-end mt-4 mb-4">
+                                <p class="h4 m-0"><span class="pe-1">Reservation details</p>
+                            </div>
+                            <div class="col-12 px-4">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <p class="textmuted">Total rental days</p>
+                                    <p class="fs-14 fw-bold" id="rental-days"><span class="fas fa-dollar-sign pe-1"></span>3</p>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <p class="textmuted">Rental charge (LKR)</p>
+                                    <p class="fs-14 fw-bold" id="rental-charge"><span class="fas fa-dollar-sign pe-1"></span>120</p>
+                                </div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <p class="textmuted">Service charge (LKR)</p>
+                                    <p class="fs-14 fw-bold" id="service-charge"><span class="fas fa-dollar-sign pe-1"></span>1,450</p>
+                                </div>
+                                <div class="d-flex justify-content-between mb-3">
+                                    <p class="textmuted fw-bold">Total (LKR)</p>
+                                    <div class="d-flex align-text-top ">
+                                        <span class="fas fa-dollar-sign mt-1 pe-1 fs-14"></span><span class="h4" id="total-charge">1,350</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row m-0">
+                            <div class="col-12  mb-4 p-0">
+                                <div class="btn btn-primary">Make Inquiry<span class="fas fa-arrow-right ps-2"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
