@@ -64,7 +64,18 @@
     top: 0;
     left: 0;
 }
-
+.more{
+    background-color: yellow;
+     color: black;
+      width: 30vw;
+        text-align: center;
+         margin: auto; 
+         border-radius: 5%;
+         display: flex;
+          align-items: center;
+           justify-content: center;
+            padding: 12px;
+}
 .vehical .slider .wrapper .preNext#nextBtn {
     position: absolute;
     padding-top: 10%;
@@ -399,6 +410,9 @@ body {
 
     .sss {
         width: 100%;
+    }
+    .more{
+        width: 58vw;
     }
 
 }

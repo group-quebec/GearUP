@@ -1,5 +1,9 @@
 function navigateToPage() {
-  window.location.href = 'sites/sanjana.html'; 
+  window.location.href = 'sites/select.html'; 
+}
+
+function navigateToPageLogging(){
+  window.location.href = 'sites/login.html';
 }
 
 document.addEventListener("DOMContentLoaded", function() {
