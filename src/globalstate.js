@@ -23,15 +23,18 @@ const StateManager = (function() {
             addAccount: function(accountData) {
                 // Check if the accountList has an element with the same username and password
                 const accountExists = state.accountList.some(account =>
-                    account.username === accountData.username && account.password === accountData.password
+                    account.username === accountData.username || account.email === accountData.email || 
+                    account.phone === accountData.phone
                 );
 
                 if (!accountExists) {
                     state.accountList.push(accountData);
                     saveState('accountList', state.accountList);
+                    state.currentAccount = accountData;
                     console.log('Account added successfully');
+                    return true;
                 } else {
-                    console.log('Account already exists');
+                    return false;
                 }
             },
             getCurrentAccount: function() {
@@ -43,7 +46,7 @@ const StateManager = (function() {
             tryLogin: function(username, password) {
                 // Check if the accountList has an element with the same username and password
                 const account = state.accountList.find(account =>
-                    account.username === username && account.password === password
+                    (account.username === username || account.email === username) && account.password === password
                 );
 
                 if (account) {
@@ -53,8 +56,12 @@ const StateManager = (function() {
                     return true;
                 } else {
                     console.log('Invalid username or password');
+                    state.currentAccount = null;
                     return false;
                 }
+            },
+            signOut: function(){
+                currentAccount = null;
             }
         };
     }

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Work+Sans:wght@800&display=swap');
 
 
 * {
@@ -11,15 +11,30 @@
 body {
     padding: 15px;
     background-color: #ddc3c3;
+    background: url(../res/bg5.jpg);
+    backdrop-filter: blur(4px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
 }
 
 .container {
     margin: 20px auto;
     max-width: 1000px;
-    background-color: white;
+    background-color: rgba(20,20,20,0.8);
     padding: 0;
 }
 
+.car-image{
+    border-style: solid;
+    border-radius: 10px;
+    box-shadow: #dddddd;
+    border: 2px solid #aaaaaa; 
+}
+
+.secondary-container{
+    background-color: rgba(0,0,0,0);
+}
 
 .form-control {
     height: 25px;
@@ -99,8 +114,20 @@ img {
 }
 
 .textmuted {
-    color: #6c757d;
+    color: #dddddd;
     font-size: 17px;
+}
+
+.text-topic{
+    color: #eeeeee;
+    font-weight: 400;
+    font-size: 19px;
+}
+
+.text-data{
+    color: #bbbbbb;
+    font-weight: 100;
+    font-size: 15px;
 }
 
 .fs-14 {
@@ -112,7 +139,7 @@ img {
     height: 55px;
     border-radius: 0;
     padding: 13px 0;
-    background-color: black;
+    background-color: #3e77f2;
     border: none;
     font-weight: 600;
 }
@@ -122,16 +149,22 @@ img {
     transition: transform 0.5s ease
 }
 
-input[type="date"],input[type="text"]
+input[type="date"],input[type="text"],.location-select
 {
     border-radius: 5px;
     padding: 5px;
+    font-family: 'Poppins',sans-serif;
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    color: #bbbbbb;
 }
 
-.location-select{
-    border-width: 2px;
-    border-radius: 5px;
-    padding: 5px;
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(80%);
+}
+
+::placeholder,::-ms-input-placeholder{
+    color: white;
 }
 
 .fw-900 {
@@ -148,11 +181,12 @@ input[type="date"],input[type="text"]
 
 .h4 {
     font-family: 'Work Sans', sans-serif !important;
-    font-weight: 800 !important;
+    font-weight: 300 !important;
 }
 
 .textmuted,
 h5,
-.text-muted {
+.text-muted,
+.text-topic {
     font-family: 'Poppins', sans-serif;
 }

@@ -1,7 +1,10 @@
 
 
 function handleAddAccount() {
+    const fullname = document.getElementById('reg-fullname').value;
     const username = document.getElementById('reg-username').value;
+    const email = document.getElementById('reg-email').value;
+    const phone = document.getElementById('reg-phone').value;
     const password = document.getElementById('reg-pass').value;
     const passwordconf = document.getElementById('reg-pass-conf').value;
 
@@ -9,7 +12,13 @@ function handleAddAccount() {
         alert("password mismatch");
         return;
     }
-    StateManager.getInstance().addAccount({ username, password });
+    const success = StateManager.getInstance().addAccount({ fullname, username, email, phone, password });
+    if (success){
+        window.location.href = `../sites/welcome.html?from=signup`;
+    }
+    else{
+        alert('Account already exists!');
+    }
 }
 
 function handleLogin() {
@@ -17,16 +26,7 @@ function handleLogin() {
     const password = document.getElementById('login-password').value;
     const loginSuccess = StateManager.getInstance().tryLogin(username, password);
     if (loginSuccess) {
-        document.getElementById('signup-section').classList.remove('visible');
-        document.getElementById('signup-section').classList.add('hidden');
-        document.getElementById('login-section').classList.remove('visible');
-        document.getElementById('login-section').classList.add('hidden');
-        
-        document.getElementById('welcome-section').classList.remove('hidden');
-        document.getElementById('welcome-section').classList.add('visible');
-
-        setTimeout(function() {window.location.href = '../index.html';}, 5000);
-
+        window.location.href = `../sites/welcome.html?from=login`;
     } else {
         alert('Login failed');
     }

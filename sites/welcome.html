@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../src/login.css" rel="stylesheet">
+    <script src="../src/globalstate.js"></script>
+
+</head>
+<body>
+    <!-- <div class="header px-5">
+        <a href="#"><img src="../res/logo.png" alt="logo" width="80" height="80"></a>
+        <a href="#">Home</a>
+    </div>
+ -->
+    
+    <div class="container">
+        <div class="login-container">
+            <div class="logo-container p-2">
+                <img src="../res/logo.png" alt="Logo" width="100" height="100" class="mb-2">
+                <h2 class="py-2" id="message">Sign in to GearUp</h2>
+                <h6 class="py-2 mt-4" id="message">You will be redirected shortly...</h6>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function getCameFromWhere(){
+            const params = new Proxy(new URLSearchParams(window.location.search), {
+                    get: (searchParams, prop) => searchParams.get(prop),
+                });
+
+            return params.from;
+        }
+
+        function setMessage(){
+            const msg = document.getElementById('message');
+            const from = getCameFromWhere();
+            if (from === "login")
+                msg.innerHTML = `Welcome back, ${StateManager.getInstance().getCurrentAccount().fullname}`;
+            else if (from === "signup")
+                msg.innerHTML = `Welcome to Gear Up, ${StateManager.getInstance().getCurrentAccount().fullname}`;     
+            else
+                msg.innerHTML = `Error`;
+
+            setTimeout(function() {window.location.href = '../index.html';}, 5000);
+        }
+
+        window.onload = function(){
+            setMessage();
+        }
+    </script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

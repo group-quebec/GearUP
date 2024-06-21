@@ -32,9 +32,9 @@ function loadCarInfo(){
         const car = car_info[index];
         modelE.innerHTML = car.model;
         typeE.innerHTML = car.type;
-        fuelE.innerHTML = '4566';
+        fuelE.innerHTML = car.fuel;
         descE.innerHTML = car.desc;
-        rateE.innerHTML = car.rate;
+        rateE.innerHTML = `LKR ${car.rate}`;
         imageE.setAttribute('src',car.img);
     }
 }
