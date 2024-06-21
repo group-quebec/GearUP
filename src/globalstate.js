@@ -7,7 +7,8 @@ const StateManager = (function() {
     function createInstance() {
         const state = {
             currentAccount: loadState('currentAccount') || null,
-            accountList: loadState('accountList') || []
+            accountList: loadState('accountList') || [],
+            loggedIn: loadState('isLoggedIn') || false
         };
 
         function saveState(key, value) {
@@ -34,6 +35,7 @@ const StateManager = (function() {
                     console.log('Account added successfully');
                     return true;
                 } else {
+                    loggedIn = false;
                     return false;
                 }
             },
@@ -52,16 +54,27 @@ const StateManager = (function() {
                 if (account) {
                     state.currentAccount = account;
                     saveState('currentAccount', state.currentAccount);
-                    console.log('Login successful');
+                    saveState('isLoggedIn', true);
+                    //alert('Login successful');
+                    state.loggedIn = true;
                     return true;
                 } else {
-                    console.log('Invalid username or password');
+                    //alert('Invalid username or password');
+                    saveState('currentAccount', null);
+                    saveState('isLoggedIn', false);
                     state.currentAccount = null;
+                    state.loggedIn = false;
                     return false;
                 }
             },
             signOut: function(){
-                currentAccount = null;
+                state.currentAccount = null;
+                state.loggedIn = false;
+                saveState('currentAccount', null);
+                saveState('isLoggedIn', false);
+            },
+            isLoggedIn: function(){
+                return state.loggedIn;
             }
         };
     }
