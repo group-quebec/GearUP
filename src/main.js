@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // login related
       const buttondiv = document.getElementById('loggin-buttons');
       const log = StateManager.getInstance().isLoggedIn();
-      this.alert(log);
+
       if (!log){
         const b1 = document.createElement('button');
         b1.type = "button";
@@ -67,5 +67,3 @@ document.addEventListener("DOMContentLoaded", function() {
       }
   });
 });
-
-

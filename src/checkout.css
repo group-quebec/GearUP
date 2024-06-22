@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Work+Sans:wght@800&display=swap');
 
 
 * {
@@ -21,7 +21,9 @@ body {
 .container {
     margin: 20px auto;
     max-width: 1000px;
-    background-color: rgba(20,20,20,0.8);
+    background-color: rgba(230,230,230,0.60);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 0;
 }
 
@@ -114,21 +116,22 @@ img {
 }
 
 .textmuted {
-    color: #dddddd;
+    color: #2b2a2a;
     font-size: 17px;
     margin-bottom: 0.4rem;
+    font-weight: 600;
 }
 
 .text-topic{
-    color: #eeeeee;
-    font-weight: 400;
+    color: #282727;
+    font-weight: 700;
     font-size: 19px;
     
     margin-bottom: 0.4rem;
 }
 
 .text-data{
-    color: #bbbbbb;
+    color: #3c3c3c;
     font-weight: 100;
     font-size: 15px;
     margin-bottom: 0.4rem;
@@ -149,30 +152,17 @@ img {
     border-color: #419aff;
   }
 
-/* .btn.btn-primary {
-    width: 100%;
-    height: 55px;
-    border-radius: 0;
-    padding: 13px 0;
-    background-color: #3e77f2;
-    border: none;
-} */
-
-/* .btn.btn-primary:hover .fas {
-    transform: translateX(10px);
-    transition: transform 0.5s ease
-}*/
-
 input[type="date"],input[type="text"],input[type="time"],.location-select.location-select
 {
     position: relative;
     border-radius: 5px;
     padding: 5px;
     font-family: 'Poppins',sans-serif;
-    background-color: #0d1117;
-    border: 1px solid #30363d;
-    color: #bbbbbb;
     width: 80%;
+
+    background-color: #bababa; /* Light background */
+    color: #333333; /* Dark text color */
+    border: 1px solid #cccccc;
 }
 
 input[type="text"]{
@@ -180,9 +170,9 @@ input[type="text"]{
     border-radius: 5px;
     padding: 5px;
     font-family: 'Poppins',sans-serif;
-    background-color: #0d1117;
-    border: 1px solid #30363d;
-    color: #bbbbbb;
+    background-color: #bababa; /* Light background */
+    color: #333333; /* Dark text color */
+    border: 1px solid #cccccc;
     width: 100%;
 }
 
@@ -217,9 +207,15 @@ input[type="date"]::-webkit-calendar-picker-indicator,input[type="time"]::-webki
     opacity: 0; /* Hide the default icon */
 }
 
-::placeholder,::-ms-input-placeholder{
-    color: white;
-}
+input[type="text"]::placeholder,input[type="date"]::placeholder,input[type="time"]::placeholder {
+    color: #302f2f; /* Medium grey placeholder text */
+  }
+  
+  /* Input field focus styles */
+  input[type="text"]:focus,input[type="date"]:focus,input[type="time"]:focus {
+    border-color: #999999; /* Slightly darker border on focus */
+    outline: none; /* Remove default focus outline */
+  }
 
 .fw-900 {
     font-weight: 900;
@@ -237,6 +233,7 @@ input[type="date"]::-webkit-calendar-picker-indicator,input[type="time"]::-webki
     font-family: 'Work Sans', sans-serif !important;
     font-weight: 300 !important;
 }
+
 
 .textmuted,
 h5,

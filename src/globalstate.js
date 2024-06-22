@@ -98,5 +98,9 @@ function getCurrentAccount(){
 }
 
 function getAccountList(){
-    return StateManager.getInstance()
+    return StateManager.getInstance().getAccountList();
+}
+
+function isLoggedIn(){
+    return StateManager.getInstance().isLoggedIn();
 }

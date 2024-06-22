@@ -39,9 +39,15 @@ function constructSelectionBox(parent, car, index){
     a.href = '#';
     a.setAttribute('data-index', index);
     a.addEventListener('click', function() {
-        const index = this.getAttribute('data-index');
-        const url = `../sites/checkout.html?extr=${index}`;
-        window.open(url, '_blank');
+        const logged = isLoggedIn();
+        if(logged){
+            const index = this.getAttribute('data-index');
+            const url = `../sites/checkout.html?extr=${index}`;
+            window.open(url, '_blank');
+        }
+        else{
+            alert('Please log in to your account');
+        }
     });
     a.innerHTML = "<i class='bx bx-link-external'></i>";
     layerDiv.appendChild(a);
@@ -118,10 +124,36 @@ function removeChildren(){
     }
 }
 
+function indexRestrictSection(){
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+
+    return params.serv;
+}
 
 window.onload = function() {
-    populateCarSelect();
-    let catOptions = document.getElementById('category-select').options;
+    const servRestr = indexRestrictSection();
+    if (servRestr < 0 || !servRestr){
+        populateCarSelect();
+        let catOptions = document.getElementById('category-select').options;
+        service_sections.forEach(service => catOptions.add(new Option(service.name, service.index)));
+    }
+    else{
+        const dummyChild = document.createElement('div');
+        const parent = document.getElementById('vehicals');
+        const sbParent = document.getElementById('search-bar-parent');
+        sbParent.replaceChildren(document.getElementById('search-text').parentNode);
 
-    service_sections.forEach(service => catOptions.add(new Option(service.name, service.index)));
+        const service = service_sections[servRestr];
+        constructSelectionHeader(dummyChild, service);
+        
+        const container = document.createElement('div');
+        container.className = 'moye-container';
+        
+        car_info.forEach((car,index) => {if(car.category == service.index)constructSelectionBox(container, car, index);});
+
+        dummyChild.appendChild(container);
+        parent.replaceChildren(dummyChild);
+    }
 };
