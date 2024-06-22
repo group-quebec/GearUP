@@ -6,16 +6,20 @@
 }
 
 .section-head{
-    background-color: yellow; 
+    background-color: #58a6ff; 
     color: black; 
     width: 30vw;  
     text-align: center; 
     margin: auto; 
-    border-radius: 5%;
-    display: flex; 
+    border-radius: 15%;
+    display: flex;
     align-items: center; 
     justify-content: center; 
-    padding: 12px;
+    padding: 2px;
+}
+
+.section-head h2{
+    margin-bottom: 0px;
 }
 
 .vehical .heading span {
@@ -180,7 +184,7 @@
 }
 
 body {
-    background-color: #212237;
+    background-color: #222222;
     color: #fff;
 }
 
@@ -387,7 +391,7 @@ body {
     align-items: center;
     width: 3rem;
     height: 3rem;
-    background: #facc62;
+    background: blue;/* checkout btn color */
     border-radius: 50%;
 }
 
@@ -399,6 +403,10 @@ body {
 .sss {
     width: 90vh;
     height: 290px;
+    overflow: hidden;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 @media (max-width:1000px) {
@@ -441,6 +449,7 @@ body {
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
+    width: 100%;
 }
 .search-bar select, .search-bar input {
     border: none;

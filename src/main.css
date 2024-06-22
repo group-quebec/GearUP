@@ -21,15 +21,14 @@ body{
 }
 
 header{
-    background-image: url(../res/bg4.jpg);
+    background: url(../res/bg4.jpg);
     background-size: cover;
     background-position: center;
+    
     width: 100%;
     height: 80vh;
     color: aliceblue;
     margin-bottom: 5vh !important;
-    
-
 }
 
 .headersec{

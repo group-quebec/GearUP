@@ -88,3 +88,15 @@ const StateManager = (function() {
         }
     };
 })();
+
+function addAccount(accountData){
+    StateManager.getInstance().addAccount(accountData);
+}
+
+function getCurrentAccount(){
+    return StateManager.getInstance().getCurrentAccount();
+}
+
+function getAccountList(){
+    return StateManager.getInstance()
+}

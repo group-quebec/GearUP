@@ -19,13 +19,7 @@ body {
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.header a {
-  color: #58a6ff;
-  text-decoration: none;
-}
-.header a:hover {
-  color: #1f6feb;
-}
+
 .logo-container {
   text-align: center;
 }
@@ -33,7 +27,7 @@ body {
   max-width: 500px;
   margin: 20px auto;
   padding: 20px;
-  background-color: rgba(200,200,200,0.65);
+  background-color: rgba(230,230,230,0.60);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -42,11 +36,28 @@ body {
 }
 
 .form-control {
-  background-color: #0d1117;
+  background-color: #bababa;
   border: 1px solid #30363d;
-  color: #c9d1d9;
+  color: #292929;
   margin-bottom: 25px;
 }
+
+input{
+    background-color: #3c3b3b; /* Light background */
+    color: #333333; /* Dark text color */
+    border: 1px solid #cccccc;
+}
+
+input[type="text"]::placeholder,input[type="password"]::placeholder {
+  color: #302f2f; /* Medium grey placeholder text */
+}
+
+/* Input field focus styles */
+input[type="text"]:focus,input[type="password"]:focus {
+  border-color: #999999; /* Slightly darker border on focus */
+  outline: none; /* Remove default focus outline */
+}
+
 .form-control:focus {
   border-color: #58a6ff;
   box-shadow: 0 0 0 0.2rem rgba(88, 166, 255, 0.25);
@@ -60,10 +71,10 @@ body {
   border-color: #419aff;
 }
 a {
-  color: #58a6ff;
+  color: #0044cc;
 }
 a:hover {
-  color: #1f6feb;
+  color: #0044ff;
 }
 .additional-links {
   margin-top: 20px;
