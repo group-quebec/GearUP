@@ -2,6 +2,14 @@ function navigateToPage() {
   window.location.href = 'sites/select.html'; 
 }
 
+function toggleMenu() {
+  var navbar = document.querySelector('.navbar');
+  var actions = document.querySelector('.header-btn.actions');
+  navbar.classList.toggle('open');
+  actions.classList.toggle('open');
+}
+
+
 function navigateToPageLogging(){
   window.location.href = 'sites/login.html';
 }

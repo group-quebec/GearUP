@@ -79,6 +79,9 @@ header{
     font-weight: 400;
     text-decoration: none;
     position: relative;
+    
+   
+  
 }
 
 .navbar li a:hover {
@@ -475,9 +478,11 @@ header{
 @media screen and (max-width: 400px){
 
     header{
-        background-image: url(..\res\bg3.jpg);
+        background-image: url(D:\html\car rent\GearUP\res\bg3.jpg);
         text-align: center;
         height: 80vh;
+        
+    
     }
 
     .fas{
@@ -598,9 +603,4 @@ header{
         background-color:#8fa6aa;
         transform: translateY(-10px);
     }
-}
-
-
-.header-btn h3{
-    color: black;
 }
