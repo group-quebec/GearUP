@@ -1,203 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css"></link>
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
-        <script src="scrip.js"></script>
-        <title>Document</title>
-    </head>
-    <body>
-        <div class="con1">
-            <div class="heading">
-                <span class="hhh">Take your pick.</span>
-                <button class="butt" type="button">Terms & Conditions</button>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <!-- vehical selection -->
+  <section class="vehical" id="vehicals">
+
+    <h1 class="heading"> Popular <span>Vehicals</span></h1>
+
+    <div class="slider">
+      <div class="wrapper">
+
+
+        <i class="fa-solid fa-angle-left preNext" id="preBtn"></i>
+        <div class="wrapper-box">
+          <div class="box">
+            <img src="KTM 1190 RC8.png" alt="vehical1" width="300px" height="200px">
+            <div class="content">
+              <button style="padding: 10px; margin: 20px; border-radius: 10%;"> CHECK OUT</button>
             </div>
-            <div class="boxx">
-                <div class="box">
-                    <i class="uil uil-angle-left-b left-arrow"></i>
-                    <div class="contents">
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="KTM 1190 RC8.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button>
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div>
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Yamaha YZF-R1.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button>  
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div> 
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Ducati 959.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button> 
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a>
-                        </div>
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Kawasaki Ninja H2.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button> 
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div>
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Bajaj pulsar RS200.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button>  
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div> 
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Honda CRF150F.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button> 
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div> 
-                    </div>
-                    <i class="uil uil-angle-right-b right-arrow"></i>
-                </div>
+          </div>
+
+          <div class="box">
+            <img src="Bajaj pulsar RS200.png" alt="vehical1" width="1000px" height="200px">
+            <div class="content">
+
+              <a href="#" class="btn"><button style="padding: 10px; margin: 20px;"> CHECK OUT</button></a>
             </div>
+          </div>
+
+          <div class="box">
+            <img src="Yamaha YZF-R1.png" alt="vehical1" width="1000px" height="200px">
+            <div class="content">
+              <a href="#" class="btn"> <button style="padding: 10px; margin: 20px;"> CHECK OUT</button></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="Jeep CJ 2007.png" alt="vehical1" width="1000px" height="200px">
+            <div class="content">
+              <a href="#" class="btn"><button style="padding: 10px; margin: 20px;"> CHECK OUT</button></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="Chrysler Dodge.png" alt="vehical1" width="1000px" height="200px">
+            <div class="content">
+
+              <a href="#" class="btn"> <button style="padding: 10px; margin: 20px;"> CHECK OUT</button></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="Mercedes-Benz Vito.png" alt="vehical1" width="1000px" height="200px">
+            <div class="content">
+
+              <a href="#" class="btn"><button style="padding: 10px; margin: 20px;"> CHECK OUT</button></a>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="Toyota Hiace.png" vehical1" width="1000px" height="200px">
+            <div class="content">
+
+              <a href="#" class="btn"><button style="padding: 10px; margin: 20px;"> CHECK OUT</button></a>
+            </div>
+          </div>
         </div>
 
-        <div class="con2">
-            <div class="heading">
-                <span class="hhh">Take your pick.</span>
-                <button class="butt" type="button">Terms & Conditions</button>
-            </div>
-            
-            <div class="boxx">
-                <div class="box">
-                    <i class="uil uil-angle-left-b left-arrow"></i>
-                    <div class="contents">
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Rolls-Royce Phantom VII.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button> 
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div>
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="BMW i8.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button> 
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div>
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Mercedes-Benz C-Class.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button> 
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div>
-                        <div class="content">
-                            <div class="image-box">
-                                <img class="photo" src="Audi A6 Sedan.png">
-                            </div>
-                            <button class="closer" type="button" onclick="redirect()">Take a closer look</button> 
-                            <div class="veh-name">
-                                2019
-                                <p>Honda hornet 250cc</p>
-                            </div>
-                            <div class="price">
-                                From $490/day.*
-                            </div>
-                            <a href="https://www.apple.com/store">
-                                <button class="btn" type="button">Rent</button>
-                            </a> 
-                        </div>
-                    </div>
-                    <i class="uil uil-angle-right-b right-arrow"></i>
-                </div>
-            </div>
+
+        <i class="fa-solid fa-angle-right preNext" id="nextBtn"></i>
+
+      </div>
+
+
+      <div class="activecricle">
+        <div class="fa-regular fa-solid fa-circle"></div>
+        <div class="fa-regular fa-circle"></div>
+        <div class="fa-regular fa-circle"></div>
+        <div class="fa-regular fa-circle"></div>
+        <div class="fa-regular fa-circle"></div>
+        <div class="fa-regular fa-circle"></div>
+        <div class="fa-regular fa-circle"></div>
+        <div class="fa-regular fa-circle"></div>
+
+
+
+      </div>
+
+
+    </div>
+    <div style="background-color: yellow; color: black; width: 30vw;  text-align: center; margin: auto; border-radius: 5%;display: flex; align-items: center; justify-content: center; padding: 12px;">
+      <h2> Bike Rentals </h2>
+    </div>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="KTM 1190 RC8.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4> <i class="fa-solid fa-car"> KTM 1190 RC8</i></h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i>sport-bike made in Austria</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i>Manual & Petrol</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 92000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
         </div>
-    </body>
+      </div>
+      <div class="portfolio-box">
+        <img src="Bajaj pulsar RS200.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4> <i class="fa-solid fa-car"></i> Bajaj Pulsar RS200</h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i>sport-bike made in India</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i>Manual & Petrol</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 18000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      
+      <div class="portfolio-box">
+        <img src="Kawasaki Ninja H2.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Kawasaki Ninja H2 </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i>sport-bike made in Japan</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i>Manual & Petrol</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 52000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      
+      <div class="portfolio-box">
+        <img src="Yamaha YZF-R1.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4> <i class="fa-solid fa-car"> Yamaha YZF R1 </i></h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i>sport-bike made in Japan</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i>Manual & Petrol</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 512000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="Ducati 959.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Ducati 959 </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i>sport-bike made in Italy</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i>Manual & Petrol</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 952000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="Honda CBR1000RR.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Honda CBR 1000RR </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> sport-bike made in Japan</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Manual & Petrol</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 19952000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+    </div>
+    <div style="background-color: yellow; color: black; width: 30vw;  text-align: center; margin: auto; border-radius: 5%;display: flex; align-items: center; justify-content: center; padding: 12px;">
+      <h2> 4*4 Rentals </h2>
+    </div>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="Jeep CJ Mahindra.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Jeep CJ Mahindra </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Off-road vehical made in United States</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Mnual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 9952000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="Jeep CJ 2007.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Jeep Wrangler 2007 </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Off-road vehicle made in United States</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Auto & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 7952000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+
+
+      <div class="portfolio-box">
+        <img src="Land Rover Defender Traxxas TRX-4.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Land Rover Traxxas TRX-4 </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Off-road vehical made in England</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Manual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 9152000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="Jeep Wrangler 2014.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Jeep Wrangler 2014</h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Off-road vehical made in United States</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i>Manual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 155000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      
+      <div class="portfolio-box">
+        <img src="Jeep Wrangler 2021.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Jeep Wrangler 2021 </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Off-road vehical made in United States </li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Manual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 9900000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="Chrysler Dodge.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Jeep Dodge RAM </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Off-road vehical made in United States </li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Manual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 29900000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      </div>
+
+    <div style="background-color: yellow; color: black; width: 30vw;  text-align: center; margin: auto; border-radius: 5%;display: flex; align-items: center; justify-content: center; padding: 12px;">
+      <h2> Van Rentals </h2>
+    </div>
+    <div class="portfolio-container">
+      <div class="portfolio-box">
+        <img src="Toyota Hiace.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Toyota Hiace </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Van made in Japan </li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Manual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 29900000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="Toyota Vellfire.png"sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Toyota Vellfire </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Van made in Japan </li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Manual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 29900000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="portfolio-box">
+        <img src="Mercedes-Benz Vito.png" alt="sd" class="sss">
+        <div class="portfolio-layer">
+          <h4><i class="fa-solid fa-car"></i> Mercedes-Benz Vito </h4> <br>
+          <ol>
+            <li><i class="fa-solid fa-hand-point-right"></i> Van made in Germeny </li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> Manual & Diesel</li><br>
+            <li><i class="fa-solid fa-hand-point-right"></i> for Rs 29900000</li><br>
+
+          </ol>
+          <a href=""><i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+
+  <script src="index.js"></script>
+</body>
+
 </html>
