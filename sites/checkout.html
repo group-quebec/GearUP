@@ -15,11 +15,11 @@
 </head>
 <body>
     <div class="container">
-        <h2 class="py-2" style="text-align: center; color: #1d1d1d; font-weight: 700;">CheckOut</h2>
-        <div class="row m-0 pt-4 ps-4">
-            <div class="col-lg-7 pb-5 pe-lg-5">
+        <h2 class="py-2 pb-1" style="text-align: center; color: #1d1d1d; font-weight: 700;">CheckOut</h2>
+        <div class="row m-0 pt-4 ps-md-4">
+            <div class="col-lg-7 p-0 pb-5 pe-lg-5">
                 <div class="row">
-                    <div class="col-12 p-0">
+                    <div class="col-12 pb-4 pt-2">
                         <img src="../res/13675.jpg" alt="" id="car-image" class="car-image">
                     </div>
                     <div class="row m-0 justify-content-between secondary-container">
@@ -49,41 +49,41 @@
                 </div>
             </div>
             <div class="col-lg-5 p-0">
-                <div class="row m-0 p-1">
-                    <form action="" method="post">
+                <div class="row m-0 p-0">
+                    <form action="" method="post" class="p-0 p-sm-1">
                         <div class="col-12 px-0">
-                            <div class="d-flex align-items-end mt-2 mb-2">
-                                <p class="h4 m-0 text-topic"><span class="pe-1">Reservation details</p>
+                            <div class="d-flex align-items-end mt-2 mb-4">
+                                <p class="h2 m-0 text-topic"><span class="pe-1">Reservation details</p>
                             </div>
                             <div class="d-flex justify-content-between mb-2">
-                                <div class="col-sm-6 justify-content-center me-2">
+                                <div class="col-6 justify-content-center me-2">
                                     <label for="rental-date" class="row textmuted m-1">Rental date</label>
                                     <input type="date" class="row m-2 mt-1" id="rental-date" required>
                                 </div>
-                                <div class="col-sm-6  justify-content-center">
+                                <div class="col-6 justify-content-center">
                                     <label for="return-date" class="row textmuted m-1">Return date</label>
                                     <input type="date" class="row m-2 mt-1" id="return-date" required>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mb-2">
-                                <div class="col-sm-6  justify-content-center me-2">
+                                <div class="col-6 justify-content-center me-2">
                                     <label for="rental-time" class="row textmuted m-1">Rental time</label>
                                     <input type="time" class="row m-2 mt-1" id="rental-time" required>
                                 </div>
-                                <div class="col-sm-6  justify-content-center">
+                                <div class="col-6 justify-content-center">
                                     <label for="return-time" class="row textmuted m-1">Return time</label>
                                     <input type="time" class="row m-2 mt-1" id="return-time" required>
                                 </div>
                             </div>
                             <div class="d-flex justify-content-between mb-2">
-                                <div class="col-sm-6  justify-content-center me-2">
+                                <div class="col-6 justify-content-center me-2">
                                     <label for="location" class="row textmuted m-1">Rental location</label>
                                     <select name="location" id="rental-location" class="row m-2 mt-1 location-select" required>
                                         <option value="vv">Colombo</option>
                                         <option value="vv">Nuwara Eliya</option>
                                     </select>
                                 </div>
-                                <div class="col-sm-6  justify-content-center">
+                                <div class="col-6 justify-content-center">
                                     <label for="location" class="row textmuted m-1">Return location</label>
                                     <select name="location" id="return-location" class="row m-2 mt-1 location-select" required>
                                         <option value="vv">Colombo</option>
@@ -105,7 +105,7 @@
                             <!-- <div class="d-flex align-items-end mt-4 mb-4">
                                 <p class="h4 m-0"><span class="pe-1 text-topic fs-14">Reservation details</p>
                             </div> -->
-                            <div class="col-12 px-4">
+                            <div class="col-12 px-0 px-md-4">
                                 <div class="d-flex justify-content-between mb-1">
                                     <p class="textmuted">Total rental hours</p>
                                     <p class="fs-14 fw-bold text-data" id="rental-hours"><span class="fas fa-dollar-sign pe-1"></span>3</p>
