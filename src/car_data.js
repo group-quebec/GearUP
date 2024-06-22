@@ -1,18 +1,33 @@
 service_sections = [
     {
-        name:'Self Drive Rentals',
+        name:'Retail Rentals',
         index: 0,
         serviceCharge: 5600
     },
     {
-        name:'Wedding and VIP Hires',
+        name:'Corporate Rentals',
         index: 1,
+        serviceCharge: 9500
+    },
+    {
+        name:'Bike Rentals',
+        index: 2,
+        serviceCharge: 9500
+    },
+    {
+        name:'Wedding and VIP Hires',
+        index: 3,
         serviceCharge: 10500
     },
     {
-        name:'Corporate Rentals',
-        index: 2,
-        serviceCharge: 9500
+        name:'Tourism Rentals',
+        index: 4,
+        serviceCharge: 10500
+    },
+    {
+        name:'4x4 Rentals',
+        index: 5,
+        serviceCharge: 10500
     }
 ];
 

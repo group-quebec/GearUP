@@ -72,7 +72,7 @@ a:hover {
 
 
 .header a{
-color: rgb(0, 0, 0);
+color: rgb(0, 122, 252);
 font-size: 18px;
 font-weight: 400;
 text-decoration: none;
@@ -80,7 +80,7 @@ position: relative;
 }
 
 .header a:hover {
-color: rgb(0, 123, 255);
+color: rgb(0, 122, 252);
 }
 
 .header a::after{
