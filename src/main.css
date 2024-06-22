@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Work+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
     box-sizing: border-box;
+    font-family: 'Poppins';
 
 }
 
@@ -20,17 +25,20 @@ body{
     display: none;
 }
 
-header{
-    background-image: url(../res/bg4.jpg);
+.background{
     background-size: cover;
     background-position: center;
     width: 100%;
     height: 80vh;
     color: aliceblue;
     margin-bottom: 5vh !important;
+    background-image: url(../res/bg4.jpg);
+    backdrop-filter: blur(10px);
+   
     
 
 }
+
 
 .headersec{
     display: flex;
@@ -41,6 +49,7 @@ header{
     justify-content: space-between;
     border-bottom: 0.5px solid #e5e5e5;
     background-color: #ffffff;
+    z-index: 1;
    
 }
 
@@ -68,12 +77,14 @@ header{
     list-style: none;
     padding: 0;
     margin: 0;
+    z-index: 1;
     
 
 }
 
 .navbar li {
     margin: 0 1vw;
+
 }
 
 
@@ -83,6 +94,7 @@ header{
     font-weight: 400;
     text-decoration: none;
     position: relative;
+    font-family: 'Poppins';
     
    
   
@@ -143,28 +155,28 @@ header{
 
 
 .topic{
+    z-index: 2;
    
     flex-basis: 100%;
     padding-top: 25vh;
     align-items: center;
     justify-content: center;
-
+    font-family: 'Poppins';
     position: relative;
     text-align: center;
     color: white;
 }
 .topic h1{
    
-   
-    background: -webkit-linear-gradient(rgb(0, 0, 0),rgb(19, 70, 210),rgb(0, 233, 254), rgb(255, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke: 0.9px rgba(0, 0, 0, 0.7);
+   padding-top: 5vh;
+    color: #19044c;
+    -webkit-text-stroke: 0.9px rgb(0, 238, 255);
     text-align: center;
-    font-weight: 500;
-    font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    font-size: 48px;
+    font-size: 70px;
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
    
    
 }
@@ -176,7 +188,7 @@ header{
     color: #000000;
     text-align: center;
     -webkit-text-stroke: 0.7px rgba(0, 253, 253, 0.7);
-    
+    font-family: 'Poppins';
     width: max-content;
     font-size: 24px;
     -webkit-background-clip: text;
@@ -186,8 +198,13 @@ header{
 }
 
 .btn{
+    z-index: 2;
     margin-top: 20vh;
     border: 2px solid #000000;
+    background-color: #feffff;
+    color: rgb(3, 3, 3);
+    border-radius: 20px; 
+   
 }
     
  
@@ -202,6 +219,7 @@ header{
     font-style: oblique ;
     font-size: 35px;
     justify-content: center;
+    font-family: 'Poppins';
 
 }
 
@@ -222,6 +240,7 @@ header{
 
 .serv-sec div p{
     color: rgb(175, 176, 176);
+    font-family: 'Poppins';
 }
 
 
@@ -281,6 +300,7 @@ header{
     padding: 1vh 1vw;
     text-decoration: none;
     font-size: 15px;
+    font-family: 'Poppins';
     
 
 }
@@ -316,6 +336,7 @@ header{
 .about p{
     color: rgb(255, 255, 255);
     font-size: 20px;
+    font-family: 'Poppins';
    
 }
 
@@ -338,6 +359,7 @@ header{
      text-align: center;
      padding-bottom: 5vh;
      font-size: 35px;
+     font-family: 'Poppins';
 }
 .rew-list{
     display: flex;
@@ -383,6 +405,7 @@ header{
     background: -webkit-linear-gradient(#257dc4 , rgb(242, 245, 246));
     -webkit-background-clip: text;
      -webkit-text-fill-color: transparent;
+     font-family: 'Poppins';
 
 
 }
@@ -439,9 +462,9 @@ header{
 
 .contact h1{
     text-align: center;
-     font-style: oblique;
      padding-bottom: 5vh;
      font-size: 35px;
+     font-family: 'Poppins';
 
 }
 
