@@ -5,6 +5,19 @@
     color: black;
 }
 
+.section-head{
+    background-color: yellow; 
+    color: black; 
+    width: 30vw;  
+    text-align: center; 
+    margin: auto; 
+    border-radius: 5%;
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 12px;
+}
+
 .vehical .heading span {
     position: relative;
     z-index: 0;
@@ -419,4 +432,29 @@ body {
         width: 58vw;
     }
 
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.search-bar select, .search-bar input {
+    border: none;
+    outline: none;
+    padding: 0px;
+}
+.search-bar input {
+    flex: 1;
+}
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 15px;
+    cursor: pointer;
 }

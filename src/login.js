@@ -7,11 +7,7 @@ let carOptions = [
     text: 'Lotus Elise',
     value: 'Lotus Elise',
     selected: true
-},
-{
-    text: 'HUkanawa',
-    value: 'HUkanawa'
-  }
+}
 ];
 
 let bikeOptions = [
@@ -23,10 +19,6 @@ let bikeOptions = [
         text: 'Supiri Bike',
         value: 'Lotus Elise',
         selected: true
-    },
-    {
-        text: 'Gal tattaya Bike',
-        value: 'HUkanawa'
     }
 ];
 
