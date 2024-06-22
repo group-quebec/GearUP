@@ -16,6 +16,10 @@ body{
   
 }
 
+.h-btn3, .h-btn4, .menu ,.close{
+    display: none;
+}
+
 header{
     background-image: url(../res/bg4.jpg);
     background-size: cover;
@@ -79,6 +83,9 @@ header{
     font-weight: 400;
     text-decoration: none;
     position: relative;
+    
+   
+  
 }
 
 .navbar li a:hover {
@@ -474,26 +481,39 @@ header{
 
 @media screen and (max-width: 400px){
 
+.close, .menu{
+    display: none;
+}
+
+.header-btn{
+    display: none;
+}
+
     header{
-        background-image: url(..\res\bg3.jpg);
+        background-image: url(D:\html\car rent\GearUP\res\bg3.jpg);
         text-align: center;
         height: 80vh;
+        
+    
     }
 
-    .fas{
-        display: block;
-        font-size: 25px;
-        color: #000000;
-        outline-color: aliceblue;
+    .close, .menu, .h-btn3, .h-btn4{
+        display:block;
+    }
+
+    .topic h1{
+        font-size: 55px;
+        text-align: center;
+       
     }
 
     .navbar{
-        background: #49A9B6;
+        background: #5bbbd8;
         position: fixed;
         top: 0;
-        right: -350px;
-        width: 300px;
-        height: 100vh;
+        right:-150px;
+        width: 150px;
+        height: 70vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
@@ -501,27 +521,26 @@ header{
 
     .navbar li{
         display: block;
-        margin: 25px;
+       margin: 25px;
+       
+       
     }
 
-    .navbar .fas{
+    .close{
         position: absolute;
-        top: 50px;
+        top: 25px;
         left: 25px;
         cursor: pointer;
     }
 
-
-    .header-btn{
-        margin-right: 10vw;
-       
-
+    .menu{
+        padding-right: 20px;
     }
 
-    .topic h1{
-        font-size: 33px;
-        text-align: center;
+    .btn{
+        margin-top: 70px;
     }
+
 
     .serv-sec{
         display: block;
@@ -598,9 +617,4 @@ header{
         background-color:#8fa6aa;
         transform: translateY(-10px);
     }
-}
-
-
-.header-btn h3{
-    color: black;
 }

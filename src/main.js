@@ -2,6 +2,19 @@ function navigateToPage() {
   window.location.href = 'sites/select.html'; 
 }
 
+
+let sidemenu = document.getElementById("navbar");
+
+function openMenu(){
+    sidemenu.style.right = "0";
+}
+
+function closeMenu(){
+  sidemenu.style.right = "-150px";
+}
+
+
+
 function navigateToPageLogging(){
   window.location.href = 'sites/login.html';
 }
