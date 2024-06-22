@@ -103,6 +103,23 @@
     display: none;
 }
 
+
+
+.contact h1{
+    text-align: center;
+     font-style: oblique;
+     padding-bottom: 5vh;
+     font-size: 35px;
+
+}
+
+.contact p{
+    text-align: center;
+    font-style: oblique;
+
+}
+
+
 @media (min-width:1000px) {
     .vehical .slider .wrapper .wrapper-box .box.active {
         width: 100%;
