@@ -69,3 +69,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+function navigateToRides(category){
+  window.location.href = `sites/procedural_select.html?serv=${category}`;
+}

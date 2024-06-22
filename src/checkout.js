@@ -94,6 +94,10 @@ function dateInputListner(){
     }
 }
 
+function makeInquiry(){
+    
+}
+
 window.onload = function(){
     loadCarInfo();
     initializeDateTime();

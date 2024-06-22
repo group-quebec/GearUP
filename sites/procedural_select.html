@@ -12,13 +12,14 @@
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../src/globalstate.js"></script>
   <script defer src="../src/car_data.js"></script>
 </head>
 
 <body>
 
   <div class="container mt-5">
-    <div class="row search-bar px-0 py-1 mb-4">
+    <div class="row search-bar px-0 py-1 mb-4" id="search-bar-parent">
         <div class="col-4">
             <select class="form-control" id="category-select" style="font-size: large;">
             </select>
