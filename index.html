@@ -23,15 +23,19 @@
               <img src="res/logo1.jpg" alt="carlogo">
             </div>
  
-            <ul class="navbar">
+            <ul class="navbar" id="navbar">
              <li><a href="#home">Home</a></li>
              <li><a href="sites/select.html">Ride</a></li>
              <li><a href="#services">Services</a></li>
              <li><a href="#about">About Us</a></li>
              <li><a href="#contact">Contact</a></li>
+             <img class="close" onclick="closeMenu()" src="res/close.png" alt="close">
+             <button class="h-btn3 btn-secondary rounded-pill px-3" type="button" onclick="navigateToPageLogging()">Login</button>
+             <button class="h-btn4 btn-secondary rounded-pill px-3" type="button" onclick="navigateToPageLogging()">Sign Up</button>
             </ul>
-            <img src="res/menu.png" alt="">
-            <i class="fas fa-bars"  onclick="openmenu()"></i>
+
+            <img class="menu" onclick="openMenu()" src="res/menu.png" alt="">
+            
            
             <div class="header-btn">
                 <button class="h-btn1 btn-secondary rounded-pill px-3" type="button" onclick="navigateToPageLogging()">Login</button>

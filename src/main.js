@@ -2,12 +2,17 @@ function navigateToPage() {
   window.location.href = 'sites/select.html'; 
 }
 
-function toggleMenu() {
-  var navbar = document.querySelector('.navbar');
-  var actions = document.querySelector('.header-btn.actions');
-  navbar.classList.toggle('open');
-  actions.classList.toggle('open');
+
+let sidemenu = document.getElementById("navbar");
+
+function openMenu(){
+    sidemenu.style.right = "0";
 }
+
+function closeMenu(){
+  sidemenu.style.right = "-150px";
+}
+
 
 
 function navigateToPageLogging(){
