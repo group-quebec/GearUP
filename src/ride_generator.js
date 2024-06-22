@@ -124,5 +124,4 @@ window.onload = function() {
     let catOptions = document.getElementById('category-select').options;
 
     service_sections.forEach(service => catOptions.add(new Option(service.name, service.index)));
-    console.log(catOptions);
 };
