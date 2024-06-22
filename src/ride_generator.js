@@ -87,30 +87,45 @@ function constructSelectionDOM(parent, service){
 }
 
 
+function constructSelectionDOMwSearch(parent, service, searchText){
+    constructSelectionHeader(parent, service);
+    
+    const container = document.createElement('div');
+    container.className = 'moye-container';
+    
+    car_info.forEach((car,index) => {
+        const combinedStr = `${car.model}${car.desc}${car.fuel}${car.type}`.toLowerCase()
+        if (combinedStr.includes(searchText) && car.category == service.index){        
+            constructSelectionBox(container, car, index);
+        }
+    });
+
+    parent.appendChild(container);
+}
+
+
 function populateCarSelect() {
     const parent = document.getElementById('vehicals');
     const searchText = document.getElementById('search-text').value.toLowerCase();
     const dummyChild = document.createElement('div');
-    const catOptions = document.getElementById('category-select').options;
-
+    const servRestr = indexRestrictSection();
+    
     if (searchText === ""){
-        service_sections.forEach(service => constructSelectionDOM(dummyChild, service));
+        if (servRestr < 0 || servRestr >= service_sections.length || !servRestr){
+            service_sections.forEach(service => constructSelectionDOM(dummyChild, service));
+        }
+        else{
+            constructSelectionDOM(dummyChild, service_sections[servRestr]);
+        }
     }
     else{
-        const service = service_sections[catOptions.selectedIndex];
-        constructSelectionHeader(dummyChild, service);
-        
-        const container = document.createElement('div');
-        container.className = 'moye-container';
-        
-        car_info.forEach((car,index) => {
-            const combinedStr = `${car.model}${car.desc}${car.fuel}${car.type}`.toLowerCase()
-            if (combinedStr.includes(searchText) && car.category == service.index){        
-                constructSelectionBox(container, car, index);
-            }
-        });
-
-        dummyChild.appendChild(container);
+        if (servRestr < 0 || servRestr > service_sections.length || !servRestr){
+            const catOptions = document.getElementById('category-select').options;
+            constructSelectionDOMwSearch(dummyChild, service_sections[catOptions.selectedIndex], searchText);
+        }
+        else{
+            constructSelectionDOMwSearch(dummyChild, service_sections[servRestr], searchText);
+        }
     }
 
     parent.replaceChildren(dummyChild);
@@ -133,6 +148,9 @@ function indexRestrictSection(){
 }
 
 window.onload = function() {
+    document.getElementById('search-text').addEventListener("input", populateCarSelect);
+    document.getElementById('category-select').addEventListener("input", populateCarSelect);
+
     const servRestr = indexRestrictSection();
     if (servRestr < 0 || !servRestr){
         populateCarSelect();
@@ -140,20 +158,9 @@ window.onload = function() {
         service_sections.forEach(service => catOptions.add(new Option(service.name, service.index)));
     }
     else{
-        const dummyChild = document.createElement('div');
-        const parent = document.getElementById('vehicals');
         const sbParent = document.getElementById('search-bar-parent');
         sbParent.replaceChildren(document.getElementById('search-text').parentNode);
 
-        const service = service_sections[servRestr];
-        constructSelectionHeader(dummyChild, service);
-        
-        const container = document.createElement('div');
-        container.className = 'moye-container';
-        
-        car_info.forEach((car,index) => {if(car.category == service.index)constructSelectionBox(container, car, index);});
-
-        dummyChild.appendChild(container);
-        parent.replaceChildren(dummyChild);
+        populateCarSelect();
     }
 };
