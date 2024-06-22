@@ -6,16 +6,17 @@
 }
 
 .section-head{
-    background-color: #58a6ff; 
-    color: black; 
+    background-color: #04365a; 
+    color: rgb(255, 255, 255); 
     width: 30vw;  
     text-align: center; 
     margin: auto; 
-    border-radius: 15%;
+    border-radius: 10px;
     display: flex;
-    align-items: center; 
+    align-items: center ; 
     justify-content: center; 
     padding: 2px;
+    margin-top: 20vh !important;
 }
 
 .section-head h2{
@@ -389,10 +390,10 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 3rem;
-    height: 3rem;
-    background: blue;/* checkout btn color */
-    border-radius: 50%;
+    width: 5vw;
+    height: 4vh;
+    background: rgb(235, 235, 241);/* checkout btn color */
+    border-radius: 10px;
 }
 
 .moye-layer a i {
