@@ -32,112 +32,366 @@ service_sections = [
 ];
 
 car_info = [
+
+    // retail rental
     {
-        model:'Toyota Subaru BRZ',
+        model:'Toyota Aqua',
         type:'Auto',
         fuel:'Petrol',
         category:0,
-        desc:'Sports-car made in Japan',
-        rate: 12000,
-        img:'../res/381722.jpg'
+        desc:'Car made in Japan',
+        rate: 5000,
+        img:'../res/aqua.jpg'
     },
     {
-        model:'Mustang Shelby GT500',
-        type:'Manual',
+        model:'Toyota Axio',
+        type:'Auto',
         fuel:'Petrol',
         category:0,
-        desc:'Sport-car made in Germany',
-        rate: 52000,
-        img:'../res/381722.jpg'
+        desc:'Carar made in Germany',
+        rate: 7000,
+        img:'../res/axio.webp'
     },
     {
-        model:'Lada Raven',
+        model:'Mini Cooper',
         type:'Auto',
         fuel:'Petrol',
         category:0,
         desc:'Dream-car made in Russia',
-        rate: 980000,
-        img:'../res/381722.jpg'
+        rate: 7000,
+        img:'../res/minicooper.webp'
     },
     {
-        model:'BMW M4',
+        model:'Toyota Premio',
         type:'Manual',
         fuel:'Petrol',
         category:0,
         desc:'Sport-car made in Germany',
-        rate: 92000,
-        img:'../res/381722.jpg'
+        rate: 9000,
+        img:'../res/premio.jpg'
     },
     {
-        model:'Aston Martin Lagonda',
+        model:'Toyota Prius',
         type:'Auto',
         fuel:'Petrol',
         category:0,
-        desc:'Sport-car made in UK',
+        desc:'Car made in Japan',
         rate: 99000,
-        img:'../res/381722.jpg'
+        img:'../res/prius.jpg'
     },
     {
-        model:'Ferarri F40',
+        model:'Waggan R',
         type:'Auto',
         fuel:'Petrol',
         category:0,
-        desc:'Sports-car made in Italy',
+        desc:'car made in Japan',
         rate: 24000,
-        img:'../res/381722.jpg'
+        img:'../res/waganr.jpg'
     },
+
+
+
+    //  corporate rental
+
     {
-        model:'Lamborghini Centenario',
+        model:'Audi s7 ',
         type:'Auto',
         fuel:'Petrol',
-        category:0,
+        category:1,
         desc:'Sports-car made in Italy',
         rate: 512000,
-        img:'../res/381722.jpg'
+        img:'../res/audi.avif'
     },
     {
         model:'Bugatti Chiron',
         type:'Auto',
         fuel:'Petrol',
-        category:0,
+        category:1,
         desc:'Sports-car made in France',
         rate: 952000,
-        img:'../res/381722.jpg'
+        img:'../res/benz.avif'
     },
     {
-        model:'McLaren Artura',
-        type:'Auto',
-        fuel:'Petrol',
-        category:0,
-        desc:'Sports-car made in Italy',
-        rate: 19952000,
-        img:'../res/381722.jpg'
-    },
-    {
-        model:'Audi R8',
+        model:'BMW 5 Series',
         type:'Auto',
         fuel:'Petrol',
         category:1,
-        desc:'Sports-car made in Germany',
-        rate: 64000,
-        img:'../res/381722.jpg'
+        desc:'Luxury-car made in Europe',
+        rate: 19952000,
+        img:'../res/bmw5series.jpg'
     },
     {
-        model:'Aston Martin Lagonda',
+        model:'BMW M5 Series',
+        type:'Auto',
+        fuel:'Petrol',
+        category:1,
+        desc:'Luxury-car made in Germany',
+        rate: 64000,
+        img:'../res/bmwm5.jpg'
+    },
+    {
+        model:'rolls royce',
         type:'Auto',
         fuel:'Petrol',
         category:1,
         desc:'Luxury-car made in United Kingdom',
         rate: 99000,
-        img:'../res/13666.jpg'
+        img:'../res/rr.jpg'
     },
     {
-        model:'BMW M3',
+        model:'Jaguar',
         type:'Auto',
         fuel:'Petrol',
         category:1,
         desc:'Sport-car made in Germany',
         rate: 12000,
-        img:'../res/13675.jpg'
+        img:'../res/jaguar.jpg'
+    },
+
+
+
+
+    // bike rentals
+
+    {
+        model:'E-Bike',
+        type:'Auto',
+        fuel:'Electric',
+        category:2,
+        desc:'Electric Bike made in Europe',
+        rate: 12000,
+        img:'../res/bike.jpg'
+    },
+    {
+        model:'DK 125',
+        type:'Manual',
+        fuel:'Petrol',
+        category:2,
+        desc:'Bike made in in Germany',
+        rate: 12000,
+        img:'../res/dk125.jpg'
+    },
+    {
+        model:'Harley',
+        type:'Auto',
+        fuel:'Petrol',
+        category:2,
+        desc:'Bike made in Germany',
+        rate: 12000,
+        img:'../res/harley.jpg'
+    },
+    
+    {
+        model:'Honda CB 125R',
+        type:'Auto',
+        fuel:'Petrol',
+        category:2,
+        desc:'Sport-bike made in Germany',
+        rate: 12000,
+        img:'../res/hondacb12dr.webp'
+    },
+    {
+        model:'Ymamaha XV1100',
+        type:'Auto',
+        fuel:'Petrol',
+        category:2,
+        desc:'Sport-bike made in Germany',
+        rate: 12000,
+        img:'../res/yamahaxv1100.jpg'
+    },
+    {
+        model:'KTM 390',
+        type:'Manual',
+        fuel:'Petrol',
+        category:2,
+        desc:'Sport-bike made in Germany',
+        rate: 12000,
+        img:'../res/ktm390.jpeg'
+    },
+
+
+
+
+
+    // wedding and vip hires
+    
+    {
+        model:'Audi',
+        type:'Auto',
+        fuel:'Petrol',
+        category:3,
+        desc:'Sport-car made in Germany',
+        rate: 12000,
+        img:'../res/weddingaudi.jpg'
+    },
+    {
+        model:'Limousine',
+        type:'Auto',
+        fuel:'Desiel',
+        category:3,
+        desc:'LOng vehicle made in Germany',
+        rate: 12000,
+        img:'../res/limo.jpg'
+    },
+    {
+        model:'Benz',
+        type:'Auto',
+        fuel:'Petrol',
+        category:3,
+        desc:'Sport-car made in Germany',
+        rate: 12000,
+        img:'../res/weddingbenz.jpeg'
+    },
+    {
+        model:'Mini Cooper',
+        type:'Auto',
+        fuel:'Petrol',
+        category:3,
+        desc:'Sport-car made in Germany',
+        rate: 12000,
+        img:'../res/weddingmini.jpg'
+    },
+    {
+        model:'Toyota Premio',
+        type:'Auto',
+        fuel:'Petrol',
+        category:3,
+        desc:'Sport-car made in Germany',
+        rate: 12000,
+        img:'../res/weddingpremio.jpg'
+    },
+    {
+        model:'Van',
+        type:'Auto',
+        fuel:'Desiel',
+        category:3,
+        desc:'Van made in Germany',
+        rate: 12000,
+        img:'../res/weddingvan.jpeg'
+    },
+
+
+
+
+
+    // tourism rantals
+
+    
+    {
+        model:'King Long Bus',
+        type:'Manual',
+        fuel:'Desiel',
+        category:4,
+        desc:'Bus made in Germany',
+        rate: 12000,
+        img:'../res/tbus.jpg'
+    },
+    {
+        model:'KDH Van',
+        type:'Auto',
+        fuel:'Desiel',
+        category:4,
+        desc:'Van made in Germany',
+        rate: 12000,
+        img:'../res/kdh.jpg'
+    },
+    {
+        model:'BMW Convertable',
+        type:'Auto',
+        fuel:'Petrol',
+        category:4,
+        desc:'Sport-car made in Germany',
+        rate: 12000,
+        img:'../res/tbmw.avif'
+    },
+    
+    {
+        model:'Caravan',
+        type:'Auto',
+        fuel:'Desiel',
+        category:4,
+        desc:'Suv made in Germany',
+        rate: 12000,
+        img:'../res/tcaravan.jpg'
+    },
+    {
+        model:'Family Caravan',
+        type:'Auto',
+        fuel:'Desiel',
+        category:4,
+        desc:'Caravan made in Germany',
+        rate: 12000,
+        img:'../res/tcaravan2.jpg'
+    },
+    {
+        model:'KDH 23',
+        type:'Auto',
+        fuel:'Desiel',
+        category:4,
+        desc:'Vanr made in Germany',
+        rate: 12000,
+        img:'../res/tcab.jpg'
+    }
+    ,
+
+
+
+
+    // 4*4 rentals
+    
+    {
+        model:'Ford Rapter',
+        type:'Manual',
+        fuel:'Desiel',
+        category:5,
+        desc:'Sport-car made in Germany',
+        rate: 12000,
+        img:'../res/rapter.jpg'
+    },
+    {
+        model:'Wranglar Jeep',
+        type:'Auto',
+        fuel:'Desiel',
+        category:5,
+        desc:'4*4 Suv made in Germany',
+        rate: 12000,
+        img:'../res/wranglar.jpg'
+    },
+    {
+        model:'Defender',
+        type:'Auto',
+        fuel:'Petrol',
+        category:5,
+        desc:'4*4 SUV made in Germany',
+        rate: 12000,
+        img:'../res/defender.webp'
+    },
+    
+    {
+        model:'Ford Mustang EJeep',
+        type:'Auto',
+        fuel:'Electric',
+        category:5,
+        desc:'Electric suv made in Germany',
+        rate: 12000,
+        img:'../res/ford.avif'
+    },
+    {
+        model:'Land Rover',
+        type:'Auto',
+        fuel:'Desiel',
+        category:5,
+        desc:'Sport-Suv made in Germany',
+        rate: 12000,
+        img:'../res/landrover.webp'
+    },
+    {
+        model:'Toyota Prado',
+        type:'Auto',
+        fuel:'Desiel',
+        category:5,
+        desc:'4*4 Suv made in Germany',
+        rate: 12000,
+        img:'../res/prado.jpg'
     }
 ];

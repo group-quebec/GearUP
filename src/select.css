@@ -296,7 +296,7 @@ body {
 
     90% {
         background: #fef723;
-        box-shadow: none, rotate: 0deg;
+        box-shadow: none, rotate(0deg);
     }
 
     90.1%,

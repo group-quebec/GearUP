@@ -1,5 +1,5 @@
 function navigateToPage() {
-  window.location.href = 'sites/select.html'; 
+  window.location.href = 'sites/procedural_select.html'; 
 }
 
 
