@@ -31,6 +31,12 @@ function navigateToPageSignup(){
   window.location.href = 'sites/signup.html';
 }
 
+function signOut(){
+  StateManager.getInstance().signOut(); 
+  location.reload();
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("load", function() {
       const loadingOverlay = document.getElementById('loading-overlay');
@@ -38,10 +44,21 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.style.overflow = 'auto'; 
 
       // login related
-      const buttondiv = document.getElementById('loggin-buttons');
-      const log = StateManager.getInstance().isLoggedIn();
+      const login = document.getElementById('loggin-buttons');
+      const signout = document.getElementById('username-signout');
+      const usrname = document.getElementById('username');
+      const log = isLoggedIn();
 
-      if (!log){
+      if (log){
+        signout.style.display = "display";
+        login.style.display = "none";
+        usrname.innerHTML = `${getCurrentAccount().username} <i class="fas fa-user">`;
+      }
+      else{
+        signout.style.display = "none";
+        login.style.display = "display";
+      }
+      /* if (!log){
         const b1 = document.createElement('button');
         b1.type = "button";
         b1.className = "h-btn1 btn-secondary rounded-pill px-3";
@@ -73,6 +90,6 @@ document.addEventListener("DOMContentLoaded", function() {
         dummy.appendChild(h3);
         dummy.appendChild(b1);
         buttondiv.replaceChildren(dummy);
-      }
+      } */
   });
 });
