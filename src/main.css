@@ -50,7 +50,7 @@ body{
     justify-content: space-between;
     border-bottom: 0.5px solid #e5e5e5;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 2;
    
 }
 
@@ -78,7 +78,7 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: 1;
+    z-index: 3;
     
 
 }
@@ -175,7 +175,6 @@ body{
 
 .topic{
     z-index: 2;
-   
     flex-basis: 100%;
     padding-top: 25vh;
     align-items: center;
@@ -565,7 +564,7 @@ body{
             width: 150px;
             height: 80vh;
             padding-top: 50px;
-            z-index: 2;
+            z-index: 3;
             transition: right 0.5s;
         }
     
@@ -662,7 +661,7 @@ body{
 /* ------------------------------------------------------------------------- */
 
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
 
 .close, .menu{
     display: none;
@@ -698,7 +697,7 @@ body{
         width: 150px;
         height: 90vh;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 3;
         transition: right 0.5s;
     }
 
