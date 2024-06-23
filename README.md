@@ -2,7 +2,7 @@
 
 Link to site[https://group-quebec.github.io/GearUP/]
 
-# CSCI 12023 - Group Project by Group 17
+# CSCI 12063 - Group Project by Group 17
 Car rental service website
 
 # Members
