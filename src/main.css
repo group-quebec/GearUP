@@ -50,7 +50,7 @@ body{
     justify-content: space-between;
     border-bottom: 0.5px solid #e5e5e5;
     background-color: #ffffff;
-    z-index: 1;
+    z-index: 2;
    
 }
 
@@ -78,7 +78,7 @@ body{
     list-style: none;
     padding: 0;
     margin: 0;
-    z-index: 1;
+    z-index: 3;
     
 
 }
@@ -175,7 +175,6 @@ body{
 
 .topic{
     z-index: 2;
-   
     flex-basis: 100%;
     padding-top: 25vh;
     align-items: center;
@@ -565,7 +564,7 @@ body{
             width: 150px;
             height: 80vh;
             padding-top: 50px;
-            z-index: 2;
+            z-index: 3;
             transition: right 0.5s;
         }
     
@@ -662,6 +661,38 @@ body{
 /* ------------------------------------------------------------------------- */
 
 
+@media screen and (max-width: 600px){
+
+.services h1{
+    padding-top: 39vh;
+}
+.rew-topic h2{
+   font-size: 40px;
+}
+
+.rew-list{
+    display: block;
+
+   
+
+}
+
+.rew-list div{
+    margin-bottom: 10vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.contact h1{
+    font-size: 50px;
+}
+
+
+}
+
+
+/* ------------------------------------------------------------------------- */
+
 @media screen and (max-width: 400px){
 
 .close, .menu{
@@ -698,7 +729,7 @@ body{
         width: 150px;
         height: 90vh;
         padding-top: 50px;
-        z-index: 2;
+        z-index: 3;
         transition: right 0.5s;
     }
 
