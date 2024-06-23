@@ -557,7 +557,7 @@ body{
         }
     
         .navbar{
-            background: #5bbbd8;
+            background: #6f7b7f;
             position: fixed;
             top: 0;
             right:-150px;
@@ -722,7 +722,7 @@ body{
     }
 
     .navbar{
-        background: #5bbbd8;
+        background:#6f7b7f;
         position: fixed;
         top: 0;
         right:-150px;

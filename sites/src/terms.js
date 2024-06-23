@@ -3,5 +3,8 @@
  }
 
  function navigateToPage() {
-            window.location.href = 'http://127.0.0.1:3000/index.html'; 
+    var url = "http://127.0.0.1:3000/index.html";
+  
+  window.location.href = url;
+
  }
