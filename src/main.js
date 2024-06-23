@@ -59,16 +59,17 @@ document.addEventListener("DOMContentLoaded", function() {
       }
       else{
         const acc = StateManager.getInstance().getCurrentAccount();
-        const h3 = document.createElement('h3');
+        const h3 = document.createElement('h5');
         h3.innerHTML = `${acc.username}`;
-        
+        h3.className = "col-6";
         const b1 = document.createElement('button');
         b1.type = "button";
-        b1.className = "h-btn1 btn-secondary rounded-pill px-3";
+        b1.className = "col-6 h-btn1 btn-secondary rounded-pill px-1";
         b1.onclick = function(){StateManager.getInstance().signOut(); location.reload();}
         b1.innerHTML = "Sign Out";
 
         const dummy = document.createElement('div');
+        dummy.className = "row";
         dummy.appendChild(h3);
         dummy.appendChild(b1);
         buttondiv.replaceChildren(dummy);

@@ -19,9 +19,10 @@
 <body>
 
   <header>
-    <div class="navi">
-       <button class="h-btn1 btn-secondary rounded-pill px-3" type="button" onclick="navigateToBack()">Go Back</button>
-       <button  id="goBack" class="h-btn2 btn-secondary rounded-pill px-3" type="button" onclick="navigateToPageSignup()">Sign Up</button>
+    <div class="row navi">
+       <button id="goBack" class="h-btn1 btn-secondary rounded-pill px-3" type="button" onclick="navigateToBack()">Go Back</button>
+       <button id="sign-in-btn" class="h-btn2 btn-secondary rounded-pill px-3" type="button" onclick="navigateToPageSignin()">Sign In</button>
+       <h5 id="username" style="margin-top: 10px;"></h5>
   </div>
                 
   </header>
@@ -35,9 +36,6 @@
         <div class="col-8">
             <input type="text" class="form-control" placeholder="Enter Keywords?" id="search-text" style="font-size: large;">
         </div>
-        <!-- <div class="col-lg-1 col-md-1 col-sm-1">
-            <button type="button" onclick="populateCarSelect()"><i class="fa fa-search" style="font-size: large;"></i></button>
-        </div> -->
     </div>
   </div>
 

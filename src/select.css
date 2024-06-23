@@ -419,7 +419,7 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 5vw;
+    width: 7vw;
     height: 4vh;
     background: rgb(255, 255, 255);/* checkout btn color */
     border-radius: 10px;
