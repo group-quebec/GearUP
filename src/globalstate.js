@@ -31,7 +31,7 @@ const StateManager = (function() {
                 if (!accountExists) {
                     state.accountList.push(accountData);
                     saveState('accountList', state.accountList);
-                    state.currentAccount = accountData;
+                    this.tryLogin(accountData.username, accountData.password);
                     console.log('Account added successfully');
                     return true;
                 } else {
