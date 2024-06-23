@@ -45,30 +45,24 @@ function initializeDateTime() {
     const timeNow = now.toTimeString().split(' ')[0].substr(0, 5);
 
     const rentalDate = document.getElementById('rental-date');
-    const rentalTime = document.getElementById('rental-time');
     const returnDate = document.getElementById('return-date');
-    const returnTime = document.getElementById('return-time');
 
     rentalDate.value = today;
-    rentalTime.value = timeNow;
     now.setDate(now.getDate() + 1);
     const tomorrow = now.toISOString().split('T')[0];
     returnDate.value = tomorrow;
-    returnTime.value = timeNow;
 }
 
 function calculateHours() {
     const rentalDate = document.getElementById('rental-date').value;
-    const rentalTime = document.getElementById('rental-time').value;
     const returnDate = document.getElementById('return-date').value;
-    const returnTime = document.getElementById('return-time').value;
 
-    const rentalDateTime = new Date(`${rentalDate}T${rentalTime}`);
-    const returnDateTime = new Date(`${returnDate}T${returnTime}`);
+    const rentalDateTime = new Date(`${rentalDate}`);
+    const returnDateTime = new Date(`${returnDate}`);
 
     const diffTime = returnDateTime - rentalDateTime;
-    const diffHours = diffTime / (1000 * 60 * 60);
-    return Math.ceil(diffHours);
+    const diffDays = diffTime / (1000 * 60 * 60 * 24);
+    return Math.ceil(diffDays);
 }
 
 function dateInputListner(){
@@ -103,8 +97,6 @@ window.onload = function(){
     initializeDateTime();
     document.getElementById('rental-date').addEventListener('input', dateInputListner);
     document.getElementById('return-date').addEventListener('input', dateInputListner);
-    document.getElementById('rental-time').addEventListener('input', dateInputListner);
-    document.getElementById('return-time').addEventListener('input', dateInputListner);
     dateInputListner();
 }
 

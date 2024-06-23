@@ -92,7 +92,7 @@ function constructSelectionDOMwSearch(parent, service, searchText){
     container.className = 'moye-container';
     
     car_info.forEach((car,index) => {
-        const combinedStr = `${car.model}${car.desc}${car.fuel}${car.type}`.toLowerCase()
+        const combinedStr = `${car.model}${car.desc}${car.fuel}${car.type}${car.rate}`.toLowerCase()
         if (combinedStr.includes(searchText) && car.category == service.index){        
             constructSelectionBox(container, car, index);
         }
@@ -181,5 +181,5 @@ function navigateToBack() {
 
 
   function navigateToPageSignin() {
-    window.location.href = "../sites/login.html";
+    window.location.href = "../sites/login.html?from=rides";
 }
