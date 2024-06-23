@@ -555,7 +555,7 @@ body{
         }
     
         .navbar{
-            background: #5bbbd8;
+            background: #6f7b7f;
             position: fixed;
             top: 0;
             right:-150px;
@@ -720,7 +720,7 @@ body{
     }
 
     .navbar{
-        background: #5bbbd8;
+        background:#6f7b7f;
         position: fixed;
         top: 0;
         right:-150px;
@@ -803,7 +803,7 @@ body{
  }
  .desc{
     text-align: center;
-    padding-bottom: 5vh;
+    padding-bottom: 12px;
     justify-content: center;
  }
 
@@ -841,6 +841,9 @@ body{
 
     .locate-button{
         margin-bottom: 5vh;
+        background-color: #257dc4;
+        height: 5vh;
+        border: 1px solid #fcfeff; 
     }
 
     .abt-col2 img{
