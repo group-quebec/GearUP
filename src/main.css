@@ -501,11 +501,17 @@ body{
     pointer-events: none;
 }
 
+.account-btns{
+    display: none;
+}
+
 /* --------------------------------------------------------------- */
 
 
 @media  (max-width: 820px){
-
+    .account-btns{
+        display: flex;
+    }
     
     .close, .menu{
         display: none;

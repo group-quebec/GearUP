@@ -94,8 +94,8 @@ function dateInputListner(){
     }
 }
 
-function makeInquiry(){
-    
+function phonyCheckout(){
+    window.location.href = "../sites/welcome.html?from=check";
 }
 
 window.onload = function(){
