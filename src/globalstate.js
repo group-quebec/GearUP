@@ -31,11 +31,14 @@ const StateManager = (function() {
                 if (!accountExists) {
                     state.accountList.push(accountData);
                     saveState('accountList', state.accountList);
-                    this.tryLogin(accountData.username, accountData.password);
+                    state.currentAccount = accountData;
+                    saveState('currentAccount', state.currentAccount);
+                    saveState('isLoggedIn', true);
+                    state.loggedIn = true;
                     console.log('Account added successfully');
                     return true;
                 } else {
-                    loggedIn = false;
+                    state.loggedIn = false;
                     return false;
                 }
             },
@@ -103,4 +106,8 @@ function getAccountList(){
 
 function isLoggedIn(){
     return StateManager.getInstance().isLoggedIn();
+}
+
+function signOut(){
+    StateManager.getInstance().signOut();
 }
