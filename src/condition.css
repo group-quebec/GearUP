@@ -108,7 +108,10 @@ button {
 }
 
 .button-set{
-    margin-left: 300px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin: auto;
 }
 
 button.accept {
@@ -233,6 +236,12 @@ button.cancel {
     .words{
         padding: 50px;
         padding-top: 30px;
+    }
+
+    .button-set{
+        display: grid;
+        gap: 10px;
+        margin: auto;
     }
 }
 
