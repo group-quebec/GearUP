@@ -40,7 +40,7 @@ car_info = [
         fuel:'Petrol',
         category:0,
         desc:'Car made in Japan',
-        rate: 5000,
+        rate: 7000,
         img:'../res/aqua.jpg'
     },
     {
@@ -76,7 +76,7 @@ car_info = [
         fuel:'Petrol',
         category:0,
         desc:'Car made in Japan',
-        rate: 99000,
+        rate: 9900,
         img:'../res/prius.jpg'
     },
     {
@@ -85,7 +85,7 @@ car_info = [
         fuel:'Petrol',
         category:0,
         desc:'car made in Japan',
-        rate: 24000,
+        rate: 5000,
         img:'../res/waganr.jpg'
     },
 
@@ -99,43 +99,43 @@ car_info = [
         fuel:'Petrol',
         category:1,
         desc:'Sports-car made in Italy',
-        rate: 512000,
+        rate: 30000,
         img:'../res/audi.avif'
     },
     {
-        model:'Bugatti Chiron',
+        model:'Mercedez Benz CLA',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:1,
         desc:'Sports-car made in France',
-        rate: 952000,
+        rate: 32000,
         img:'../res/benz.avif'
     },
     {
         model:'BMW 5 Series',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:1,
         desc:'Luxury-car made in Europe',
-        rate: 19952000,
+        rate: 44000,
         img:'../res/bmw5series.jpg'
     },
     {
         model:'BMW M5 Series',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:1,
         desc:'Luxury-car made in Germany',
-        rate: 64000,
+        rate: 55000,
         img:'../res/bmwm5.jpg'
     },
     {
         model:'rolls royce',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:1,
         desc:'Luxury-car made in United Kingdom',
-        rate: 99000,
+        rate:100000,
         img:'../res/rr.jpg'
     },
     {
@@ -144,7 +144,7 @@ car_info = [
         fuel:'Petrol',
         category:1,
         desc:'Sport-car made in Germany',
-        rate: 12000,
+        rate: 35000,
         img:'../res/jaguar.jpg'
     },
 
@@ -159,7 +159,7 @@ car_info = [
         fuel:'Electric',
         category:2,
         desc:'Electric Bike made in Europe',
-        rate: 12000,
+        rate: 5000,
         img:'../res/bike.jpg'
     },
     {
@@ -168,7 +168,7 @@ car_info = [
         fuel:'Petrol',
         category:2,
         desc:'Bike made in in Germany',
-        rate: 12000,
+        rate: 6000,
         img:'../res/dk125.jpg'
     },
     {
@@ -177,7 +177,7 @@ car_info = [
         fuel:'Petrol',
         category:2,
         desc:'Bike made in Germany',
-        rate: 12000,
+        rate: 7000,
         img:'../res/harley.jpg'
     },
     
@@ -187,7 +187,7 @@ car_info = [
         fuel:'Petrol',
         category:2,
         desc:'Sport-bike made in Germany',
-        rate: 12000,
+        rate: 8000,
         img:'../res/hondacb12dr.webp'
     },
     {
@@ -205,7 +205,7 @@ car_info = [
         fuel:'Petrol',
         category:2,
         desc:'Sport-bike made in Germany',
-        rate: 12000,
+        rate: 7000,
         img:'../res/ktm390.jpeg'
     },
 
@@ -218,7 +218,7 @@ car_info = [
     {
         model:'Audi',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:3,
         desc:'Sport-car made in Germany',
         rate: 12000,
@@ -227,19 +227,19 @@ car_info = [
     {
         model:'Limousine',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:3,
         desc:'LOng vehicle made in Germany',
-        rate: 12000,
+        rate: 30000,
         img:'../res/limo.jpg'
     },
     {
         model:'Benz',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:3,
         desc:'Sport-car made in Germany',
-        rate: 12000,
+        rate: 20000,
         img:'../res/weddingbenz.jpeg'
     },
     {
@@ -248,7 +248,7 @@ car_info = [
         fuel:'Petrol',
         category:3,
         desc:'Sport-car made in Germany',
-        rate: 12000,
+        rate: 10000,
         img:'../res/weddingmini.jpg'
     },
     {
@@ -257,16 +257,16 @@ car_info = [
         fuel:'Petrol',
         category:3,
         desc:'Sport-car made in Germany',
-        rate: 12000,
+        rate: 10000,
         img:'../res/weddingpremio.jpg'
     },
     {
         model:'Van',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:3,
         desc:'Van made in Germany',
-        rate: 12000,
+        rate: 15000,
         img:'../res/weddingvan.jpeg'
     },
 
@@ -280,56 +280,56 @@ car_info = [
     {
         model:'King Long Bus',
         type:'Manual',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:4,
         desc:'Bus made in Germany',
-        rate: 12000,
+        rate: 50000,
         img:'../res/tbus.jpg'
     },
     {
         model:'KDH Van',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:4,
         desc:'Van made in Germany',
-        rate: 12000,
+        rate: 25000,
         img:'../res/kdh.jpg'
     },
     {
         model:'BMW Convertable',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:4,
         desc:'Sport-car made in Germany',
-        rate: 12000,
+        rate: 24000,
         img:'../res/tbmw.avif'
     },
     
     {
         model:'Caravan',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:4,
         desc:'Suv made in Germany',
-        rate: 12000,
+        rate: 55000,
         img:'../res/tcaravan.jpg'
     },
     {
         model:'Family Caravan',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Toak',
         category:4,
         desc:'Caravan made in Germany',
-        rate: 12000,
+        rate: 35000,
         img:'../res/tcaravan2.jpg'
     },
     {
         model:'KDH 23',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:4,
         desc:'Vanr made in Germany',
-        rate: 12000,
+        rate: 20000,
         img:'../res/tcab.jpg'
     }
     ,
@@ -342,28 +342,28 @@ car_info = [
     {
         model:'Ford Rapter',
         type:'Manual',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:5,
         desc:'Sport-car made in Germany',
-        rate: 12000,
+        rate: 20000,
         img:'../res/rapter.jpg'
     },
     {
         model:'Wranglar Jeep',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:5,
         desc:'4*4 Suv made in Germany',
-        rate: 12000,
+        rate: 50000,
         img:'../res/wranglar.jpg'
     },
     {
         model:'Defender',
         type:'Auto',
-        fuel:'Petrol',
+        fuel:'Diesel',
         category:5,
         desc:'4*4 SUV made in Germany',
-        rate: 12000,
+        rate: 25000,
         img:'../res/defender.webp'
     },
     
@@ -373,25 +373,25 @@ car_info = [
         fuel:'Electric',
         category:5,
         desc:'Electric suv made in Germany',
-        rate: 12000,
+        rate: 60000,
         img:'../res/ford.avif'
     },
     {
         model:'Land Rover',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:5,
         desc:'Sport-Suv made in Germany',
-        rate: 12000,
+        rate: 75000,
         img:'../res/landrover.webp'
     },
     {
         model:'Toyota Prado',
         type:'Auto',
-        fuel:'Desiel',
+        fuel:'Diesel',
         category:5,
         desc:'4*4 Suv made in Germany',
-        rate: 12000,
+        rate: 40000,
         img:'../res/prado.jpg'
     }
 ];

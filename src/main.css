@@ -137,6 +137,7 @@ body{
     color: white;
     border-radius: 20px; 
     border: 1px solid #0078d7; 
+    margin: 10px;
 }
 
 .h-btn1:hover{
@@ -248,7 +249,6 @@ body{
 
 
 
-
 .other-ser-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(10vw, 1fr));
@@ -265,9 +265,6 @@ body{
     height: 30vh;
    border-radius: 10px;
    display: block;
-   
-   
-
 }
 
 
@@ -505,6 +502,139 @@ body{
     pointer-events: none;
 }
 
+/* --------------------------------------------------------------- */
+
+
+@media  (max-width: 820px){
+
+    
+    .close, .menu{
+        display: none;
+    }
+    
+    .header-btn{
+        display: none;
+    }
+    
+        header{
+            background-image: url(../res/bg3.jpg);
+            text-align: center;
+            height: 80vh;
+            
+        
+        }
+    
+        .close, .menu, .h-btn3, .h-btn4{
+            display:block;
+        }
+    
+        .topic h1{
+            font-size: 70px;
+            text-align: center;
+           
+        }
+    
+        .navbar{
+            background: #5bbbd8;
+            position: fixed;
+            top: 0;
+            right:-150px;
+            width: 150px;
+            height: 80vh;
+            padding-top: 50px;
+            z-index: 2;
+            transition: right 0.5s;
+        }
+    
+        .navbar li{
+            display: block;
+           margin: 25px;
+           
+           
+        }
+    
+        .close{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            cursor: pointer;
+        }
+    
+        .menu{
+            padding-right: 20px;
+        }
+    
+        .btn{
+            margin-top: 70px;
+        }
+    
+        .other-ser-grid{
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
+                grid-gap: 5vw;
+                margin-top: 5vh;
+                margin-left: 10vw;
+                margin-right: 10vw;
+                justify-content: space-around;
+                margin-bottom: 5vh;
+        }
+            
+        .other-ser-grid  img{
+                
+            height: 20vh;
+              
+            display: block;
+               
+               
+            
+        }    
+    
+        .o-col1:hover .layer, .o-col2:hover .layer, .o-col3:hover .layer {
+            height: 100% !important;
+        }
+    
+    
+        .abt-col1 h1{
+            font-size: 40px;
+        }
+    
+        .abt-col1 p{
+            font-size: 15px;
+        }
+    
+        .abt-col2 img{
+            margin-top: 20vh;
+            height: 50vh;
+            
+        }
+    
+        .rew-topic h2{
+            font-size: 50px;
+        }
+    
+        .contact h1{
+            font-size: 50px;
+        }
+    
+    
+        
+    .nav{
+       margin-left: 1vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    .nav li{
+        display: flex !important;
+    }
+    
+    .ms-3 {
+        margin-left: 0rem !important;
+    }
+    
+    
+    
+    }
 
 /* ------------------------------------------------------------------------- */
 
@@ -586,37 +716,39 @@ body{
 
     .others-services{
         display: block;
+        flex-basis: 100%;
     }
 
 .other-ser-grid{
     display: block !important;
-    align-items: center;
-
+    flex-basis: 100%;
     margin-top: 5vh;
-    margin-left: 50px;
-    margin-right:50px;
     justify-content: space-around;
     margin-bottom: 5vh;
+    width: 80%;
 }
 
-.other-ser-grid div{
-    width: 300px !important;
-}
-
-.other-ser-grid  img{
+.other-ser-grid img{
    
-   border-radius: 10px;
-   display: block;
+    height: 35vh;
 }
+
+
 
  .o-col1, .o-col2, .o-col3{
-    width: 250px !important;
-    padding-left: 20VW;
-    height: 30vh;
+    width:90% !important;
+    justify-content: space-around;
+    height: 40vh;
+    margin-left: 13vw;
+    margin-bottom: 10vh;
+    position: relative;
+    right: 35px;
 
  }
  .desc{
-    padding-right: 35vw;
+    text-align: center;
+    padding-bottom: 5vh;
+    justify-content: center;
  }
 
     .layer{
@@ -644,7 +776,11 @@ body{
     }
 
     .abt-col1 h1{
-        font-size: 50px;
+        font-size: 40px;
+    }
+
+    .abt-col1 p{
+        font-size: 16px;
     }
 
     .locate-button{
@@ -658,7 +794,7 @@ body{
         width: 330px;
     }
 
-    /* reviews */
+    /*-------------------- reviews ---------------------------*/
 
     .rew-topic h2{
         font-size: 35px;
@@ -686,135 +822,13 @@ body{
     color: black;
 }
 
+
+.nav{
+    margin-left: 75px;
+
+}
+
 /* --------------------------------------------------------------------------- */
 
 
 
-
-@media screen and (max-width: 820px){
-
-    
-.close, .menu{
-    display: none;
-}
-
-.header-btn{
-    display: none;
-}
-
-    header{
-        background-image: url(../res/bg3.jpg);
-        text-align: center;
-        height: 80vh;
-        
-    
-    }
-
-    .close, .menu, .h-btn3, .h-btn4{
-        display:block;
-    }
-
-    .topic h1{
-        font-size: 70px;
-        text-align: center;
-       
-    }
-
-    .navbar{
-        background: #5bbbd8;
-        position: fixed;
-        top: 0;
-        right:-150px;
-        width: 150px;
-        height: 80vh;
-        padding-top: 50px;
-        z-index: 2;
-        transition: right 0.5s;
-    }
-
-    .navbar li{
-        display: block;
-       margin: 25px;
-       
-       
-    }
-
-    .close{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
-
-    .menu{
-        padding-right: 20px;
-    }
-
-    .btn{
-        margin-top: 70px;
-    }
-
-    .other-ser-grid{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(8vw, 1fr));
-            grid-gap: 5vw;
-            margin-top: 5vh;
-            margin-left: 10vw;
-            margin-right: 10vw;
-            justify-content: space-around;
-            margin-bottom: 5vh;
-    }
-        
-    .other-ser-grid  img{
-            width: auto;
-            height: 15vh;
-           border-radius: 10px;
-           display: block;
-           
-           
-        
-    }    
-
-    .o-col1:hover .layer, .o-col2:hover .layer, .o-col3:hover .layer {
-        height: 100% !important;
-    }
-
-
-    .abt-col1 h1{
-        font-size: 70px;
-    }
-
-    .abt-col1 p{
-        font-size: 25px;
-    }
-
-    .abt-col2 img{
-        margin-top: 47vh;
-        height: 50vh;
-        
-    }
-
-    .rew-topic h2{
-        font-size: 60px;
-    }
-
-    .contact h1{
-        font-size: 70px;
-    }
-
-
-    
-.nav{
-   margin-left: 1vw;
-    display: flex;
-    align-items: center;
-}
-
-.nav li{
-    display: flex !important;
-}
-
-
-
-
-}
