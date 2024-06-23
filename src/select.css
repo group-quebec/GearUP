@@ -4,7 +4,16 @@ header{
 }
 
 .navi{
-    margin-left: 80vw;
+    justify-content: right;
+    transform: translateX(-3%);
+    /* margin-left: 80vw; */
+}
+@media screen and (max-width: 500px) {
+    
+    .navi{
+        justify-content: right;
+        transform: translateX(-8%);
+    }
 }
 
 .h-btn1{
@@ -419,8 +428,8 @@ body {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 7vw;
-    height: 4vh;
+    width: 120px;
+    height: 30px;
     background: rgb(255, 255, 255);/* checkout btn color */
     border-radius: 10px;
     color: black;
@@ -481,6 +490,7 @@ body {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     overflow: hidden;
     width: 100%;
+    margin: auto;
 }
 .search-bar select, .search-bar input {
     border: none;
