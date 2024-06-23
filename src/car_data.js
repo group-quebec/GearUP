@@ -2,32 +2,56 @@ service_sections = [
     {
         name:'Retail Rentals',
         index: 0,
+<<<<<<< HEAD
         serviceCharge: 5000
+=======
+        serviceCharge: 800
+>>>>>>> 964b1c99ae9e0f2e8a11585c8489897c8463c367
     },
     {
         name:'Corporate Rentals',
         index: 1,
+<<<<<<< HEAD
         serviceCharge: 10000
+=======
+        serviceCharge: 5400
+>>>>>>> 964b1c99ae9e0f2e8a11585c8489897c8463c367
     },
     {
         name:'Bike Rentals',
         index: 2,
+<<<<<<< HEAD
         serviceCharge: 3000
+=======
+        serviceCharge: 1200
+>>>>>>> 964b1c99ae9e0f2e8a11585c8489897c8463c367
     },
     {
         name:'Wedding and VIP Hires',
         index: 3,
+<<<<<<< HEAD
         serviceCharge: 10000
+=======
+        serviceCharge: 12500
+>>>>>>> 964b1c99ae9e0f2e8a11585c8489897c8463c367
     },
     {
         name:'Tourism Rentals',
         index: 4,
+<<<<<<< HEAD
         serviceCharge: 20000
+=======
+        serviceCharge: 2500
+>>>>>>> 964b1c99ae9e0f2e8a11585c8489897c8463c367
     },
     {
         name:'4x4 Rentals',
         index: 5,
+<<<<<<< HEAD
         serviceCharge: 20000
+=======
+        serviceCharge: 15000
+>>>>>>> 964b1c99ae9e0f2e8a11585c8489897c8463c367
     }
 ];
 

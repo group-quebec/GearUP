@@ -31,6 +31,12 @@ function navigateToPageSignup(){
   window.location.href = 'sites/signup.html';
 }
 
+function signOut(){
+  StateManager.getInstance().signOut(); 
+  location.reload();
+}
+
+
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener("load", function() {
       const loadingOverlay = document.getElementById('loading-overlay');
@@ -38,40 +44,27 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.style.overflow = 'auto'; 
 
       // login related
-      const buttondiv = document.getElementById('loggin-buttons');
-      const log = StateManager.getInstance().isLoggedIn();
+      const login1 = document.getElementById('loggin-buttons-1');
+      const login2 = document.getElementById('loggin-buttons-2');
+      const signout1 = document.getElementById('username-signout-1');
+      const signout2 = document.getElementById('username-signout-2');
+      const usrname1 = document.getElementById('username-1');
+      const usrname2 = document.getElementById('username-2');
+      const log = isLoggedIn();
 
-      if (!log){
-        const b1 = document.createElement('button');
-        b1.type = "button";
-        b1.className = "h-btn1 btn-secondary rounded-pill px-3";
-        b1.onclick = navigateToPageLogging;
-        b1.innerHTML = "Login";
-        const b2 = document.createElement('button');
-        b2.type = "button";
-        b2.className = "h-btn2 btn-secondary rounded-pill px-3";
-        b2.onclick = navigateToPageSignup;
-        b2.innerHTML = "Sign Up";
-        const dummy = document.createElement('div');
-        dummy.appendChild(b1);
-        dummy.appendChild(b2);  
-        buttondiv.replaceChildren(dummy);
+      if (log){
+        signout1.style.display = "block";
+        signout2.style.display = "block";
+        login1.style.display = "none";
+        login2.style.display = "none";
+        usrname1.innerHTML = `${getCurrentAccount().username} <i class="fas fa-user">`;
+        usrname2.innerHTML = `${getCurrentAccount().username} <i class="fas fa-user">`;
       }
       else{
-        const acc = StateManager.getInstance().getCurrentAccount();
-        const h3 = document.createElement('h3');
-        h3.innerHTML = `${acc.username}`;
-        
-        const b1 = document.createElement('button');
-        b1.type = "button";
-        b1.className = "h-btn1 btn-secondary rounded-pill px-3";
-        b1.onclick = function(){StateManager.getInstance().signOut(); location.reload();}
-        b1.innerHTML = "Sign Out";
-
-        const dummy = document.createElement('div');
-        dummy.appendChild(h3);
-        dummy.appendChild(b1);
-        buttondiv.replaceChildren(dummy);
+        signout1.style.display = "none";
+        signout2.style.display = "none";
+        login1.style.display = "block";
+        login2.style.display = "block";
       }
   });
 });

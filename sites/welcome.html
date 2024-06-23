@@ -24,9 +24,11 @@
                 msg.innerHTML = `Welcome back, ${StateManager.getInstance().getCurrentAccount().fullname}`;
             else if (from === "signup")
                 msg.innerHTML = `Welcome to Gear Up, ${StateManager.getInstance().getCurrentAccount().fullname}`;     
+            else if (from === "check")
+                msg.innerHTML = `Thank you for using our service...`;
             else
                 msg.innerHTML = `Error`;
-
+            
             setTimeout(function() {window.location.href = '../index.html';}, 5000);
         }
 

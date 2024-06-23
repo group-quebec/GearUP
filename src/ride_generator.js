@@ -37,11 +37,9 @@ function constructSelectionBox(parent, car, index){
 
     const a = document.createElement('a');
     a.href = '#';
-    a.setAttribute('data-index', index);
     a.addEventListener('click', function() {
         const logged = isLoggedIn();
         if(logged){
-            const index = this.getAttribute('data-index');
             const url = `../sites/checkout.html?extr=${index}`;
             window.open(url, '_blank');
         }
@@ -49,7 +47,7 @@ function constructSelectionBox(parent, car, index){
             alert('Please log in to your account');
         }
     });
-    a.innerHTML = "<i class='bx bx-link-external'></i>";
+    a.innerHTML = "<i class='fas fa-cart-shopping bx bx-link-external'> Checkout</i>";
     layerDiv.appendChild(a);
 
     carDiv.appendChild(layerDiv);
@@ -94,7 +92,7 @@ function constructSelectionDOMwSearch(parent, service, searchText){
     container.className = 'moye-container';
     
     car_info.forEach((car,index) => {
-        const combinedStr = `${car.model}${car.desc}${car.fuel}${car.type}`.toLowerCase()
+        const combinedStr = `${car.model}${car.desc}${car.fuel}${car.type}${car.rate}`.toLowerCase()
         if (combinedStr.includes(searchText) && car.category == service.index){        
             constructSelectionBox(container, car, index);
         }
@@ -151,6 +149,17 @@ window.onload = function() {
     document.getElementById('search-text').addEventListener("input", populateCarSelect);
     document.getElementById('category-select').addEventListener("input", populateCarSelect);
 
+    if(isLoggedIn()){
+        const usrname = document.getElementById('username');
+        usrname.style.display = "display";
+        usrname.innerHTML = `${getCurrentAccount().username} <i class="fas fa-user"></i>`;
+        document.getElementById('sign-in-btn').style.display = "none";
+    }
+    else{
+        document.getElementById('sign-in-btn').style.display = "display";
+        document.getElementById('username').style.display = "none";
+    }
+
     const servRestr = indexRestrictSection();
     if (servRestr < 0 || !servRestr){
         populateCarSelect();
@@ -171,10 +180,6 @@ function navigateToBack() {
 }
 
 
-  function navigateToPageSignup() {
-    let button = document.getElementById('goBack');
-    button.style.display = 'none';
-
-    window.location.href = "http://127.0.0.1:3000/sites/signup.html";
-   
+  function navigateToPageSignin() {
+    window.location.href = "../sites/login.html?from=rides";
 }
