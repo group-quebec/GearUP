@@ -164,3 +164,17 @@ window.onload = function() {
         populateCarSelect();
     }
 };
+
+
+function navigateToBack() {
+    history.go(-1);
+}
+
+
+  function navigateToPageSignup() {
+    let button = document.getElementById('goBack');
+    button.style.display = 'none';
+
+    window.location.href = "http://127.0.0.1:3000/sites/signup.html";
+   
+}

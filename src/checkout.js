@@ -107,3 +107,25 @@ window.onload = function(){
     document.getElementById('return-time').addEventListener('input', dateInputListner);
     dateInputListner();
 }
+
+
+
+function handleAddAccount() {
+   
+    var messageContainer = document.getElementById('makeinq');
+    
+    
+    var message = document.createElement('p');
+    
+    // Set the text content of the message
+    message.textContent = 'Thank you for booking a vehicle and staying with us!. Drive safely. Redirecting to Home page...';
+    
+    // Append the message to the message container
+    messageContainer.appendChild(message);
+    
+    // Redirect to another page after a short delay
+    setTimeout(function() {
+        window.location.href = "http://127.0.0.1:3000/index.html";
+    }, 2000); // Delay in milliseconds
+}
+

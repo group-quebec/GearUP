@@ -1,3 +1,32 @@
+header{
+   
+    background: linear-gradient(rgba(0,0,0,0.6), #04365a);
+}
+
+.navi{
+    margin-left: 80vw;
+}
+
+.h-btn1{
+    background-color: #ffffff;
+    color:  #0078d7;
+    border-radius: 20px; 
+    border: 1px solid #0078d7; 
+    margin: 10px;
+    margin-left: 0vw;
+    align-items: end;
+}
+
+.h-btn2{
+    background-color: #0078d7;
+    color: white;
+    border-radius: 20px; 
+    border: 1px solid #0078d7; 
+    margin: 10px;
+    margin-left: 0vw;
+   
+}
+
 .heading {
     text-align: center;
     padding-bottom: 2rem;
@@ -269,19 +298,19 @@ body {
 @keyframes animate {
     0% {
         background: #0f0;
-        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        /* box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0; */
         rotate: 0deg;
     }
 
     20% {
         background: #0f0;
-        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        /* box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0; */
         rotate: 0deg;
     }
 
     40% {
         background: #0f0;
-        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        /* box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0; */
         rotate: 90deg;
         transform-origin: bottom;
         filter: hue-rotate(0deg);
@@ -289,7 +318,7 @@ body {
 
     80% {
         background: #0f0;
-        box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0;
+        /* box-shadow: 0 0 5px #0f0, 0 0 15px #0f0, 0 0 30px #0f0, 0 0 50px #0f0; */
         rotate: 90deg;
         transform-origin: bottom;
         filter: hue-rotate(360deg);
@@ -297,13 +326,13 @@ body {
 
     90% {
         background: #fef723;
-        box-shadow: none, rotate(0deg);
+        /* box-shadow: none, rotate(0deg); */
     }
 
     90.1%,
     100% {
-        box-shadow: #fe2323;
-        box-shadow: none;
+        /* box-shadow: #fe2323; */
+        /* box-shadow: none; */
     }
 }
 
@@ -329,7 +358,7 @@ body {
 .moye-container .moye-box {
     position: relative;
     border-radius: 2rem;
-    box-shadow: 0 0 1rem #fff;
+    /* box-shadow: 0 0 1rem #fff; */
     overflow: hidden;
     display: flex;
 }
@@ -392,8 +421,9 @@ body {
     align-items: center;
     width: 5vw;
     height: 4vh;
-    background: rgb(235, 235, 241);/* checkout btn color */
+    background: rgb(255, 255, 255);/* checkout btn color */
     border-radius: 10px;
+    color: black;
 }
 
 .moye-layer a i {

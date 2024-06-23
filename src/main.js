@@ -15,6 +15,14 @@ function closeMenu(){
 
 
 
+function navigateToLocation() {
+  var url = "https://maps.app.goo.gl/4CTNhWY4pZ2j8tjGA";
+  
+  window.location.href = url;
+  
+}
+
+
 function navigateToPageLogging(){
   window.location.href = 'sites/login.html';
 }
