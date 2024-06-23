@@ -805,7 +805,7 @@ body{
  }
  .desc{
     text-align: center;
-    padding-bottom: 5vh;
+    padding-bottom: 12px;
     justify-content: center;
  }
 
@@ -843,6 +843,9 @@ body{
 
     .locate-button{
         margin-bottom: 5vh;
+        background-color: #257dc4;
+        height: 5vh;
+        border: 1px solid #fcfeff; 
     }
 
     .abt-col2 img{
